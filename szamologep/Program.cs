@@ -18,10 +18,10 @@ namespace szamologep
             {
                 Console.WriteLine("Adja meg az első számot!");
                 szam1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Adja meg a második számot!");
-                szam2 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Adja meg a műveleti jelet!");
                 muvelet = Convert.ToChar(Console.Read());
+                Console.WriteLine("Adja meg a második számot!");
+                szam2 = int.Parse(Console.ReadLine());
             }
             else
             {

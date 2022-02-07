@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mtable2", "mtable2\mtable2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamologep", "szamologep\szamologep.csproj", "{BB805B3F-FE4A-4BB2-85BF-62030AB811B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kovfeladat", "kovfeladat\kovfeladat.csproj", "{742B10D4-BB07-4A1F-91DF-D81F67E31D95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kopapirollo", "kovfeladat\kopapirollo.csproj", "{742B10D4-BB07-4A1F-91DF-D81F67E31D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
