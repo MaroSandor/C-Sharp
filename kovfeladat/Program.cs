@@ -42,9 +42,6 @@ namespace kopapirollo
                 case 'p':
                     player = "papír";
                     break;
-                default:
-                    Console.WriteLine("Szar vagy");
-                    break;
             }
         }
     }
