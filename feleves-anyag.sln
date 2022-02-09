@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20220208_helyettesites", "2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20220209_feladat1", "20220209_feladat1\20220209_feladat1.csproj", "{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamkitalalo", "szamkitalalo\szamkitalalo.csproj", "{AA608A9E-2937-449A-9D54-86791F924BA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA608A9E-2937-449A-9D54-86791F924BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA608A9E-2937-449A-9D54-86791F924BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA608A9E-2937-449A-9D54-86791F924BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA608A9E-2937-449A-9D54-86791F924BA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
