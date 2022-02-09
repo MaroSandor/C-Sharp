@@ -21,7 +21,9 @@ namespace kopapirollo
 
             Random ertek = new Random();
 
-            Console.WriteLine("Válassz! (K/P/O)");
+            do
+            {
+               Console.WriteLine("Válassz! (K/P/O)");
 
             switch (Console.ReadKey(true).KeyChar)
             {
@@ -39,13 +41,38 @@ namespace kopapirollo
                     break;
             }
 
-            do
+            switch (ertek.Next(0, 3))
             {
-                Console.WriteLine("Akarod folytatni? (I/N)");
+                case 0:
+                    ai = "kő";
+                    break;
+                case 1:
+                    ai = "olló";
+                    break;
+                case 2:
+                    ai = "papír";
+                    break;
+            }
+
+            if ((player == "kő" && ai == "papír") || (player == "papír" && ai == "olló") || (player == "olló" && ai == "kő"))
+            {
+                Console.WriteLine("Vesztettél! Állás: Számítógép: {0} Játékos: {1}", ++aiScore, playerScore);
+            }
+            else if ((player == ai))
+            {
+                Console.WriteLine("Döntetlen! Állás: Számítógép: {0} Játékos: {1}", aiScore, playerScore);
+            }
+            else
+            {
+                Console.WriteLine("Nyertél! Állás: Számítógép: {0} Játékos: {1}", aiScore, ++playerScore);
+            }
+
+            Console.WriteLine("Akarod folytatni? (I/N)");
 
                 if (Console.ReadKey(true).KeyChar == 'n')
                     valasz = false;
             } while (valasz);
+            
         }
     }
 }
