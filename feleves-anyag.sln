@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamologep", "szamologep\sz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kopapirollo", "kovfeladat\kopapirollo.csproj", "{742B10D4-BB07-4A1F-91DF-D81F67E31D95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20220208_helyettesites", "20220208_helyettesites\20220208_helyettesites.csproj", "{0D61F64B-5F49-4094-BD95-72A1669E2A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20220209_feladat1", "20220209_feladat1\20220209_feladat1.csproj", "{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{742B10D4-BB07-4A1F-91DF-D81F67E31D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{742B10D4-BB07-4A1F-91DF-D81F67E31D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{742B10D4-BB07-4A1F-91DF-D81F67E31D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D61F64B-5F49-4094-BD95-72A1669E2A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D61F64B-5F49-4094-BD95-72A1669E2A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D61F64B-5F49-4094-BD95-72A1669E2A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D61F64B-5F49-4094-BD95-72A1669E2A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE39486-5AD0-4012-99B7-AF9604AEBC9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

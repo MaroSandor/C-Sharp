@@ -21,14 +21,6 @@ namespace kopapirollo
 
             Random ertek = new Random();
 
-            do
-            {
-                Console.WriteLine("Akarod folytatni? (I/N)");
-
-                if (Console.ReadKey(true).KeyChar == 'N')
-                    valasz = false;
-            } while (valasz);
-
             Console.WriteLine("Válassz! (K/P/O)");
 
             switch (Console.ReadKey(true).KeyChar)
@@ -42,7 +34,18 @@ namespace kopapirollo
                 case 'p':
                     player = "papír";
                     break;
+                default:
+                    Console.WriteLine("Nincs ilyen elem!");
+                    break;
             }
+
+            do
+            {
+                Console.WriteLine("Akarod folytatni? (I/N)");
+
+                if (Console.ReadKey(true).KeyChar == 'n')
+                    valasz = false;
+            } while (valasz);
         }
     }
 }
