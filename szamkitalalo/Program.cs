@@ -83,30 +83,82 @@ namespace szamkitalalo
             //    {
             //        Console.WriteLine("Találat!");
             //    }
-            // Alapszerkezet
 
-            int i = 0;
-            Random pcSzam = new Random();
+            //Változók
+            int alsohatar = 1, //Véletlen szám alsó határa
+                felsohatar = 100, //Véletlen szám felső határa
+                probal = 5; //Próbálkozások maximális száma
 
-            Console.WriteLine("Válassz a játkmódok közül!");
-            Console.WriteLine("1 - Játékos mód");
-            Console.WriteLine("2 - Gépi mód");
-            int mod = Console.ReadKey(true).KeyChar;
+            Random rnd = new Random();
 
-            if (mod == 1)
+            //Játék ismétlése
+            do
             {
-
-            }
-            else if (mod == 2)
-            {
-
-            }
-            else
-            {
-                Console.WriteLine("Ilyen játékmód nincs!");
-            }
-
+                //Megkérdezem, hogy ki lesz a kitaláló
+                Console.WriteLine("Leszel az aki gondol egy számra? (i/n)");
+                if (Console.ReadKey(true).KeyChar == 'n')
+                {
+                    //Ha a játékos a kitaláló
+                    //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                    //tipp beírása
+                    //ha nagyobb a tipp.
+                    //Ha kisebb a tipp.
+                    //ha pontos a tipp.
+                    //ha k/n akkor uj tipp iras
+                }
+                else
+                {
+                    //Ha a gép a kitaláló
+                    //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                    //szám meghatározása
+                    //ha nagyobb a tipp.
+                    //Ha kisebb a tipp.
+                    //ha pontos a tipp.
+                    //ha k/n akkor uj tipp kiertekeles
+                }
+                //kérdés h akarsz-e újra játszani
+                Console.WriteLine("Folytatjuk a játékot? (i/n)");
+            } while (Console.ReadKey(true).KeyChar == 'i');
+            // sor kiirtekeles
             Console.ReadKey();
+
+            //// Alapszerkezet
+            //// Változók
+            //int alsoHatar = 0, // Véletlenszám alsó határa
+            //    felsoHatar = 100, // Véletlenszám felső határa
+            //    probak = 5; // próbálkozások száma
+            //string valasz = Console.ReadLine(); // deklarált változóhoz rendelt szöveg bekérése -> ReadLine() paranccsal
+
+            //// Random szám generálása
+            //Random pcSzam = new Random(); // Random [név] = new Random()
+
+            //// Ismétlés
+            //do
+            //{
+            //    // Kiiratás
+            //    Console.WriteLine("Válassz a játkmódok közül!"); // Console.WriteLine(<- kurzor új sorba ugrik)([név, változó vagy amit ki szeretnénk íratni])
+            //    Console.WriteLine("1 - Játékos mód (a játékos a kitaláló)"); // Console.WriteLine(<- kurzor új sorba ugrik)([név, változó vagy amit ki szeretnénk íratni])
+            //    Console.WriteLine("2 - Gépi mód (a gép a kitaláló)"); // Console.WriteLine(<- kurzor új sorba ugrik)([név, változó vagy amit ki szeretnénk íratni])
+
+            //    // Bekérés
+            //    int mod = Console.ReadKey(true).KeyChar; // deklarált változóhoz rendelt karakterbekérés (ha ez igaz, akkor a bekért karakter nem jelenik meg a konzolban, csak rejtett marad)
+
+            //    // Vizsgálat
+            //    if (mod == '1')
+            //    {
+
+            //    }
+            //    else if (mod == '2')
+            //    {
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Ilyen játékmód nincs!");
+            //    }
+            //} while (valasz != "nem");
+
+            //Console.ReadKey();
         }
     }
 }
