@@ -85,8 +85,10 @@ namespace szamkitalalo
             //    }
 
             //Változók
-            int alsohatar = 1, //Véletlen szám alsó határa
-                felsohatar = 100, //Véletlen szám felső határa
+            int alsoHatar = 1, //Véletlen szám alsó határa
+                felsoHatar = 100, //Véletlen szám felső határa
+                gondoltSzam,
+                tipp,
                 probal = 5; //Próbálkozások maximális száma
 
             Random rnd = new Random();
@@ -99,11 +101,17 @@ namespace szamkitalalo
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
                     //Ha a játékos a kitaláló
+                    //Gép generálja a számot
+                    gondoltSzam = rnd.Next(alsoHatar, felsoHatar);
                     //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
-                    //tipp beírása
-                    //ha nagyobb a tipp.
-                    //Ha kisebb a tipp.
-                    //ha pontos a tipp.
+                    for (int i = 0; i < probal+1; i++)
+                    {
+                        //tipp beírása
+                        tipp = int.Parse(Console.ReadLine());
+                        //ha nagyobb a tipp.
+                        //Ha kisebb a tipp.
+                        //ha pontos a tipp.
+                    }
                     //ha k/n akkor uj tipp iras
                 }
                 else
