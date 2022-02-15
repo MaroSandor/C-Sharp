@@ -34,6 +34,7 @@ namespace szamkitalalo
                 {
                     //Ha a gép a kitaláló
                     //Gép generálja a számot
+                    eltalalta = false;
                     gondoltSzam = rnd.Next(alsoHatar, felsoHatar);
                     //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
                     for (int i = 0; i <= probal; i++)
@@ -54,11 +55,15 @@ namespace szamkitalalo
                         //ha pontos a tipp.
                         else
                         {
-                            Console.WriteLine("\n A tipp helyes! Eltaláltad!");
+                            eltalalta = true;
+                            Console.WriteLine("\nA tipp helyes! Eltaláltad!");
                             break;
                         }
                     }
-                //ha k/n akkor uj tipp iras
+                    if (!eltalalta)
+                    {
+                        Console.WriteLine("Sajnos nem találtad el!");
+                    }
                 }
                 else // Ha a játékos a kitaláló
                 {
