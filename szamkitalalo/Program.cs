@@ -12,7 +12,7 @@ namespace szamkitalalo
         {
             //Változók
             int alsoHatar = 1, //Véletlen szám alsó határa
-                felsoHatar = 11, //Véletlen szám felső határa
+                felsoHatar = 50, //Véletlen szám felső határa
                 gondoltSzam,
                 tippAlsohatar,
                 tippFelsohatar,
@@ -30,7 +30,7 @@ namespace szamkitalalo
             {
                 //Megkérdezem, hogy ki lesz a kitaláló
                 Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
-                if (Console.ReadLine() == "n")
+                if (Console.ReadKey().KeyChar == 'n')
                 {
                     //Ha a gép a kitaláló
                     //Gép generálja a számot
@@ -39,22 +39,22 @@ namespace szamkitalalo
                     for (int i = 0; i <= probal; i++)
                     {
                         //tipp beírása
-                        Console.WriteLine("Adja meg a tippjét!");
+                        Console.WriteLine("\nAdja meg a tippjét!");
                         tipp = int.Parse(Console.ReadLine());
                         //ha nagyobb a tipp.
                         if (tipp > gondoltSzam)
                         {
-                            Console.WriteLine("A gondolt szám kisebb!");
+                            Console.WriteLine("\nA gondolt szám kisebb!");
                         }
                         //Ha kisebb a tipp.
                         else if (tipp < gondoltSzam)
                         {
-                            Console.WriteLine("A gondolt szám nagyobb!");
+                            Console.WriteLine("\nA gondolt szám nagyobb!");
                         }
                         //ha pontos a tipp.
                         else
                         {
-                            Console.WriteLine("A tipp helyes! Eltaláltad!");
+                            Console.WriteLine("\n A tipp helyes! Eltaláltad!");
                             break;
                         }
                     }
@@ -74,39 +74,36 @@ namespace szamkitalalo
                     {
                         // A gép tippjének meghatározása
                         Console.WriteLine("\nGondolj egy számra!");
-                        tipp = (tippFelsohatar - tippAlsohatar) / 2;
+                        tipp = tippAlsohatar + (tippFelsohatar - tippAlsohatar) / 2;
                         Console.WriteLine("Az én tippem: {0}", tipp);
 
                         // Kiértékelem a tippet, megadom a választ
                         valaszom = Console.ReadKey().KeyChar;
                         if (valaszom == 'n')
                         {
-                            Console.WriteLine("Nagyobbra gondoltam!");
+                            Console.WriteLine("\nNagyobbra gondoltam!");
                             tippAlsohatar = tipp;
                         } else if (valaszom == 'k')
                         {
-                            Console.WriteLine("Kisebbre gondoltam!");
+                            Console.WriteLine("\nKisebbre gondoltam!");
                             tippFelsohatar = tipp;
                         } else
                         {
                             eltalalta = true;
-                            Console.WriteLine("Eltaláltad!");
+                            Console.WriteLine("\nEltaláltad!");
                             break;
                         }
                     }
 
                     // Ha nem találta el, akkor ezt írom ki
-                    if (eltalalta)
+                    if (!eltalalta)
                     {
                         Console.WriteLine("Sajnos nem találtad el!");
                     }
-                    Console.ReadKey();
                 }
                 //kérdés h akarsz-e újra játszani
-                Console.WriteLine("Folytatjuk a játékot? (i/n)");
-            } while (Console.ReadKey().KeyChar == 'i');
-            // sor kiirtekeles
-            Console.ReadKey();
+                Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
+            } while (Console.ReadKey(true).KeyChar == 'i');
         }
     }
 }
