@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teszt", "teszt\teszt.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minmaxvalaszto", "minmaxvalaszto\minmaxvalaszto.csproj", "{FD5BD172-A471-41C8-863E-5D9FC4B580ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szigetek", "szigetek\szigetek.csproj", "{CD0F2AE3-896C-471E-89CC-22E073EFBBEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{FD5BD172-A471-41C8-863E-5D9FC4B580ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD5BD172-A471-41C8-863E-5D9FC4B580ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD5BD172-A471-41C8-863E-5D9FC4B580ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0F2AE3-896C-471E-89CC-22E073EFBBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0F2AE3-896C-471E-89CC-22E073EFBBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0F2AE3-896C-471E-89CC-22E073EFBBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0F2AE3-896C-471E-89CC-22E073EFBBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
