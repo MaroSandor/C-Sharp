@@ -14,7 +14,8 @@ namespace termenyjoslas
             int mennyiseg = 0,
                 hozam,
                 random;
-            string[] elorejelzes = new string[] {"Átlag alatti", "Átlagos", "Átlag feletti"};
+            string[] elorejelzes = new string[] { "Átlag alatti", "Átlagos", "Átlag feletti" };
+            string eloreertek = "";
 
             // Random szám generálása
             Random szam = new Random();
@@ -26,8 +27,22 @@ namespace termenyjoslas
             mennyiseg = int.Parse(Console.ReadLine());
             hozam = mennyiseg * random;
 
+            if (hozam < 10 && hozam > 0)
+            {
+                eloreertek = elorejelzes[0];
+            } else if (hozam >= 10 && hozam < 20)
+            {
+                eloreertek = elorejelzes[1];
+            } else if (hozam >= 20)
+            {
+                eloreertek = elorejelzes[2];
+            } else
+            {
+                Console.WriteLine("Ilyen nem lehetséges.");
+            }
 
             Console.WriteLine("A termény hozama: {0} tonna.", hozam);
+            Console.WriteLine("{0} év várható.", eloreertek);
 
             Console.ReadKey();
         }
