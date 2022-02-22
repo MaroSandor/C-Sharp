@@ -11,8 +11,9 @@ namespace hianyzasok
         static void Main(string[] args)
         {
             // Változók deklarálása
-            int igazolatlan,
-                szuletesidatum;
+            int igazolatlan;
+            DateTime szuletesidatum;
+            string[] buntetesmertek = new string[] { };
         }
     }
 }
