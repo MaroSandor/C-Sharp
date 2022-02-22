@@ -61,7 +61,7 @@ namespace hianyzasok
             // Igazolatlan hiányzások bekérése
 
             
-            if (igazolatlan >= 10)
+            if (10 <= igazolatlan)
             {
                 Console.WriteLine("Kérem adja meg a születési dátumát! (YYYY.MM.DD.)");
                 szuletesidatum = Convert.ToDateTime(Console.ReadLine());
