@@ -11,7 +11,7 @@ namespace termenyjoslas
         static void Main(string[] args)
         {
             // Változók deklarálása
-            int mennyiseg = 0,
+            int mennyiseg,
                 hozam,
                 random;
             string[] elorejelzes = new string[] { "Átlag alatti", "Átlagos", "Átlag feletti" };
