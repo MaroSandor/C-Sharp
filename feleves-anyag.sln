@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szigetek", "szigetek\sziget
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atlagho", "atlagho\atlagho.csproj", "{F4A4CA8A-7955-4044-9CE5-C55316E79D71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testtomegindex", "testtomegindex\testtomegindex.csproj", "{6316F965-6E5A-4FAC-82A2-040AC997E54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hianyzasok", "hianyzasok\hianyzasok.csproj", "{4240B118-2BFE-4199-9E86-97CD7A872F07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{F4A4CA8A-7955-4044-9CE5-C55316E79D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A4CA8A-7955-4044-9CE5-C55316E79D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A4CA8A-7955-4044-9CE5-C55316E79D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6316F965-6E5A-4FAC-82A2-040AC997E54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6316F965-6E5A-4FAC-82A2-040AC997E54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6316F965-6E5A-4FAC-82A2-040AC997E54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6316F965-6E5A-4FAC-82A2-040AC997E54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4240B118-2BFE-4199-9E86-97CD7A872F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4240B118-2BFE-4199-9E86-97CD7A872F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4240B118-2BFE-4199-9E86-97CD7A872F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4240B118-2BFE-4199-9E86-97CD7A872F07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
