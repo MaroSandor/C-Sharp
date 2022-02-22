@@ -13,16 +13,19 @@ namespace dinnye
             // Változók
             double szalaghossz,
                 atmero,
-                masni = 60;
+                masni = 60,
+                db;
 
             // Bekérés
 
             Console.WriteLine("Kérem a dinnye átmérőjét!");
             atmero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kérem a dinnyék számát!");
+            db = int.Parse(Console.ReadLine());
 
             // Számítás
 
-            szalaghossz = (2 * (Math.Pow((atmero/2), 2) * Math.PI) + masni) / 1000;
+            szalaghossz = db * (2 * (Math.Pow((atmero/2), 2) * Math.PI) + masni) / 1000;
 
             Console.WriteLine("A szalag hossza: {0} méter.", szalaghossz);
             Console.ReadKey();
