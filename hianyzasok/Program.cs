@@ -12,32 +12,51 @@ namespace hianyzasok
         {
             // Változók deklarálása
             int igazolatlan,
-                magatartasjegy;
+                magatartasjegy = 0;
             DateTime szuletesidatum;
             int[] buntetesmertek = new int[] {1, 2, 3, 4, 5};
+            string[] buntetes = new string[] {"Figyelmeztetést kaptál!", "Osztályfőnöki intőt kaptál!", "Igazgatói megrovást kaptál!", "Felfüggesztésben részesültél!", "Nincs figyelmeztetésed!"};
+            string figyelmeztetes = "";
 
             Console.WriteLine("Kérem adja meg a tanuló hiányzásainak számát!");
             igazolatlan = int.Parse(Console.ReadLine());
 
-            // Magatartás jegy meghatározása
-
-            if (igazolatlan <= 1)
+            if (igazolatlan < 3)
             {
                 magatartasjegy = buntetesmertek[4];
-            } else if (igazolatlan <= 3)
+                figyelmeztetes = buntetes[4];
+            } else if (igazolatlan < 5)
             {
                 magatartasjegy = buntetesmertek[3];
-            } else if (igazolatlan <= 5)
+                figyelmeztetes = buntetes[4];
+            } else if (igazolatlan < 6)
             {
                 magatartasjegy = buntetesmertek[2];
-            } else if (igazolatlan <= 7) {
+                figyelmeztetes = buntetes[4];
+            } else if (igazolatlan < 8) {
                 magatartasjegy = buntetesmertek[1];
-            } else
+            } else if (igazolatlan < 10)
             {
                 magatartasjegy = buntetesmertek[0];
+                figyelmeztetes = buntetes[4];
+            } else if (igazolatlan >= 10 && igazolatlan < 20)
+            {
+                magatartasjegy = buntetesmertek[0];
+                figyelmeztetes = buntetes[0];
+            } else if (igazolatlan >= 20 && igazolatlan < 30)
+            {
+                magatartasjegy = buntetesmertek[0];
+                figyelmeztetes = buntetes[1];
+            } else if (igazolatlan >= 30 && igazolatlan < 40)
+            {
+                magatartasjegy = buntetesmertek[0];
+                figyelmeztetes = buntetes[2];
+            } else if (igazolatlan >= 40)
+            {
+                magatartasjegy = buntetesmertek[0];
+                figyelmeztetes = buntetes[3];
             }
 
-            Console.WriteLine("A magatartásod jegye: {0}", magatartasjegy);
 
             // Igazolatlan hiányzások bekérése
 
@@ -48,6 +67,9 @@ namespace hianyzasok
                 szuletesidatum = Convert.ToDateTime(Console.ReadLine());
                 Console.WriteLine("Az igazolatlan hiányzások száma: {0}. \nSzületési dátuma: {1}", igazolatlan, szuletesidatum);
             }
+
+            Console.WriteLine("A magatartásod jegye: {0}", magatartasjegy);
+            Console.WriteLine(figyelmeztetes);
             Console.ReadKey();
         }
     }
