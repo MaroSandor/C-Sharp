@@ -11,34 +11,28 @@ namespace cimletezes
         static void Main(string[] args)
         {
             // Változók
-            int huszezer = 0,
-                tizezer = 0,
-                otezer = 0,
-                ketezer = 0,
-                ezer = 0,
-                otszaz = 0,
-                ketszaz = 0,
-                szaz = 0,
-                otven = 0,
-                husz = 0,
-                tiz = 0,
-                ot = 0,
-                penzertek;
+            int[,] cimletek = new int[,] { { 20000, 0 }, { 10000, 0 }, { 5000, 0 }, { 2000, 0 }, { 1000, 0 }, { 500, 0 }, { 200, 0 }, { 100, 0 }, { 50, 0 }, { 20, 0 }, { 10, 0 }, { 5, 0 } };
+            int penzertek;
 
             Console.WriteLine("Írja be az összeget!");
             penzertek = int.Parse(Console.ReadLine());
 
-            switch (penzertek)
+            for (int i = 0; i < cimletek.GetLength(0); i++)
             {
-                case 20000:
-                    huszezer = penzertek / 20000;
-                    break;
-                case 10000:
-                    tizezer = penzertek % 10000;
-                    break;
+                if (penzertek >= cimletek[0, i])
+                {
+                    cimletek[i, 1] = penzertek / cimletek[i, 0];
+                    penzertek = penzertek % cimletek[i, 0];
+                    if (penzertek == 0)
+                    {
+                        break;
+                    }
+                }
+
+                Console.WriteLine("{0} forintos címletből {1} db kell!", cimletek[0, i], cimletek[1, i]);
             }
 
-            Console.WriteLine("20000 forintos címletből {0} db kell!", huszezer);
+            
             Console.ReadKey();
         }
     }
