@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csempezes", "csempezes\csem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cimletezes", "cimletezes\cimletezes.csproj", "{9E685792-E75F-4E27-A8A6-EC55F1AA83DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dolgozat", "dolgozat\dolgozat.csproj", "{E64767FE-2BCC-4401-9766-88BE03186CE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{9E685792-E75F-4E27-A8A6-EC55F1AA83DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E685792-E75F-4E27-A8A6-EC55F1AA83DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E685792-E75F-4E27-A8A6-EC55F1AA83DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64767FE-2BCC-4401-9766-88BE03186CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64767FE-2BCC-4401-9766-88BE03186CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64767FE-2BCC-4401-9766-88BE03186CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64767FE-2BCC-4401-9766-88BE03186CE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
