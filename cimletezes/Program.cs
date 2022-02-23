@@ -19,17 +19,19 @@ namespace cimletezes
 
             for (int i = 0; i < cimletek.GetLength(0); i++)
             {
-                if (penzertek >= cimletek[0, i])
+                if (penzertek >= cimletek[i, 0])
                 {
-                    cimletek[i, 1] = penzertek / cimletek[i, 0];
-                    penzertek = penzertek % cimletek[i, 0];
-                    if (penzertek == 0)
+                    if (penzertek != 0)
+                    {
+                        cimletek[i, 1] = penzertek / cimletek[i, 0];
+                        penzertek = penzertek % cimletek[i, 0];
+                    } else
                     {
                         break;
                     }
                 }
 
-                Console.WriteLine("{0} forintos címletből {1} db kell!", cimletek[0, i], cimletek[1, i]);
+                Console.WriteLine("{0} forintos címletből {1} db kell!", cimletek[i, 0], cimletek[i, 1]);
             }
 
             
