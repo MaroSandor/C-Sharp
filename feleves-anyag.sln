@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mtable2", "mtable2\mtable2.csproj", "{307077C9-F9C8-4508-996D-EB798FE1DFE2}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2dolgozat_2", "2dolgozat_2\2dolgozat_2.csproj", "{D4220643-B603-45C9-B12F-4DC115CE9C4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2dolgozat_3", "2dolgozat_3\2dolgozat_3.csproj", "{E5B41F04-B412-4D39-9913-8BBA42148A47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamkiiras", "szamkiiras\szamkiiras.csproj", "{C156416C-CAD2-4749-9B8B-280F1971C3CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{E5B41F04-B412-4D39-9913-8BBA42148A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5B41F04-B412-4D39-9913-8BBA42148A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5B41F04-B412-4D39-9913-8BBA42148A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C156416C-CAD2-4749-9B8B-280F1971C3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C156416C-CAD2-4749-9B8B-280F1971C3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C156416C-CAD2-4749-9B8B-280F1971C3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C156416C-CAD2-4749-9B8B-280F1971C3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
