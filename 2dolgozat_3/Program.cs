@@ -19,13 +19,16 @@ namespace _2dolgozat_3
             Console.WriteLine("Adja meg az intervallum végőértékét!");
             b = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("5-tel osztható számok: ");
+
             for (int i = a; i <= b; i++)
             {
                 if (i % 5 == 0)
                 {
-                    Console.WriteLine("5-tel osztható számok: {0}", i);
+                    Console.Write(" {0}", i);
                 }
-            }            
+            }
+            
 
             Console.ReadKey();
 
