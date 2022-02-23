@@ -19,16 +19,19 @@ namespace dolgozat2
                 // Bekérés
                 Console.WriteLine("Kérem a könyv címét!");
                 konyvcim = Console.ReadLine();
-                Console.WriteLine("Kérem a könyv oldalszámát!");
-                oldalszam = int.Parse(Console.ReadLine());
-                if (oldalszam < 150 && oldalszam > 0)
+                if (konyvcim != "")
                 {
-                    Console.WriteLine("A könyv címe: {0}, oldalszáma: {1}. A könyv rövid terjedelmű.", konyvcim, oldalszam);
-                }
-                else
-                {
-                    Console.WriteLine("A könyv címe {0}, oldalszáma: {1}. A könyv hosszú terjedelmű!", konyvcim, oldalszam);
-                }
+                    Console.WriteLine("Kérem a könyv oldalszámát!");
+                    oldalszam = int.Parse(Console.ReadLine());
+                    if (oldalszam < 150 && oldalszam > 0)
+                    {
+                        Console.WriteLine("A könyv címe: {0}, oldalszáma: {1}. A könyv rövid terjedelmű.", konyvcim, oldalszam);
+                    }
+                    else
+                    {
+                        Console.WriteLine("A könyv címe {0}, oldalszáma: {1}. A könyv hosszú terjedelmű!", konyvcim, oldalszam);
+                    }
+                }               
             } while (konyvcim != "");
             Console.ReadKey();
         }
