@@ -33,7 +33,6 @@ namespace dolgozat2
                     }
                 }               
             } while (konyvcim != "");
-            Console.ReadKey();
         }
     }
 }
