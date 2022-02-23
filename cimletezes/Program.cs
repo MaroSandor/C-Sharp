@@ -28,7 +28,18 @@ namespace cimletezes
             Console.WriteLine("Írja be az összeget!");
             penzertek = int.Parse(Console.ReadLine());
 
+            switch (penzertek)
+            {
+                case 20000:
+                    huszezer = penzertek / 20000;
+                    break;
+                case 10000:
+                    tizezer = penzertek % 10000;
+                    break;
+            }
 
+            Console.WriteLine("20000 forintos címletből {0} db kell!", huszezer);
+            Console.ReadKey();
         }
     }
 }
