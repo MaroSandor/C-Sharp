@@ -17,13 +17,7 @@ namespace szamkiiras
             Console.WriteLine("Kérem írjon be egy számot!");
             szam = Console.ReadLine();
 
-            for (int i = 0; i < szam.Length; i++)
-            {
-                if (i == 0)
-                {
-                    Console.WriteLine(egyes[i]);
-                }
-            }
+
 
             Console.ReadKey();
         }
