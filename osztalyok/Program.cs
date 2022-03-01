@@ -94,7 +94,8 @@ namespace osztalyok
             Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat1.getNev(), allat1.getKor(), allat1.getFajta(), allat1.getSzin());
 
             Allat allat2 = new Allat("Bolhás", "Komondor", "fehér");
-            Console.WriteLine("Az állat neve: {0}", allat2.getNev());
+            allat2.setKor(5);
+            Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat2.getNev(), allat2.getKor(), allat2.getFajta(), allat2.getSzin());
 
             Allat allat3 = new Allat();
             allat3.setNev("Bambi"); allat3.setFajta("Német-juhász"); allat3.setSzin("zöld"); allat3.setKor(14);
