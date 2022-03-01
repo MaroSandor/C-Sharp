@@ -22,9 +22,65 @@ namespace osztalyok
             this.szin = szin;
         }
 
+        public Allat()
+        {
+            this.nev = "anonim";
+            this.fajta = "ismeretlen";
+            this.szin = "lila";
+            this.kor = 0;
+        }
+
+        // Meghívások
         public string getNev()
         {
             return this.nev;
+        }
+
+        public void setNev(string nev)
+        {
+            if (nev != "")
+            {
+                this.nev = nev;
+            }
+        }
+
+        public int getKor()
+        {
+            return this.kor;
+        }
+
+        public void setKor(int p)
+        {
+            if (p > 0 && p <= 50)
+            {
+                this.kor = p;
+            }
+        }
+
+        public string getFajta()
+        {
+            return this.fajta;
+        }
+
+        public void setFajta(string fajta)
+        {
+            if (fajta != "")
+            {
+                this.fajta = fajta;
+            }
+        }
+
+        public string getSzin()
+        {
+            return this.szin;
+        }
+
+        public void setSzin(string szin)
+        {
+            if (szin != "")
+            {
+                this.szin = szin;
+            }
         }
     }
     
@@ -34,9 +90,16 @@ namespace osztalyok
         {
             // Példányosítunk objektumokat
             Allat allat1 = new Allat("Bodri", "Puli", "fekete");
-            Console.WriteLine("Az állat neve: {0}", allat1.getNev());
+            allat1.setKor(2);
+            Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat1.getNev(), allat1.getKor(), allat1.getFajta(), allat1.getSzin());
+
             Allat allat2 = new Allat("Bolhás", "Komondor", "fehér");
             Console.WriteLine("Az állat neve: {0}", allat2.getNev());
+
+            Allat allat3 = new Allat();
+            allat3.setNev("Bambi"); allat3.setFajta("Német-juhász"); allat3.setSzin("zöld"); allat3.setKor(14);
+            Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat3.getNev(), allat3.getKor(), allat3.getFajta(), allat3.getSzin());
+
             Console.ReadKey();
         }
     }
