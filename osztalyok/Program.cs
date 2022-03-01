@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace osztalyok
 {
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+
     class Allat
     {
         // Osztályváltozók (properties)
@@ -30,6 +36,13 @@ namespace osztalyok
             this.szin = "lila";
             this.kor = 0;
         }
+
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
 
         // Meghívások
         public string getNev()
@@ -99,6 +112,12 @@ namespace osztalyok
     }
 
     // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
+    // Arial Rounded MT Bold
 
     class Kutya : Allat
     {
@@ -110,31 +129,72 @@ namespace osztalyok
             this.gazda = "ismeretlen";
             this.hang = "vau-vau";
         }
-    }
 
-    class Program
-    {
-        static void Main(string[] args)
+        public void setGazda(string gazda)
         {
-            // Példányosítunk objektumokat
-            Allat allat1 = new Allat("Bodri", "Puli", "fekete");
-            allat1.setKor(2);
-            Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat1.getNev(), allat1.getKor(), allat1.getFajta(), allat1.getSzin());
+            this.gazda = gazda;
+        }
 
-            Allat allat2 = new Allat("Bolhás", "Komondor", "fehér");
-            allat2.setKor(5);
-            Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat2.getNev(), allat2.getKor(), allat2.getFajta(), allat2.getSzin());
+        public string getGazda()
+        {
+            return this.gazda;
+        }
 
-            Allat allat3 = new Allat();
-            allat3.setNev("Bambi"); allat3.setFajta("Német-juhász"); allat3.setSzin("zöld"); allat3.setKor(14);
-            Console.WriteLine("\nAz állat neve: {0}, \nAz állat fajtája: {2}, \nAz állat színe: {3}, \nAz állat kora: {1} éves", allat3.getNev(), allat3.getKor(), allat3.getFajta(), allat3.getSzin());
+        class Macska : Allat
+        {
 
-            Console.WriteLine("\n============= Származtatott =============");
-            Kutya kutya1 = new Kutya("Bogár", "Puli", "Fekete");
-            Console.WriteLine("\nHangja: {0}", kutya1.hangotAd());
-            kutya1.setHang("vau-vau");
+            public Macska(string nev, string fajta, string szin) : base(nev, fajta, szin) // Konstruktor függvény
+            {
+                this.hang = "miau-miau";
+            }
+        }
 
-            Console.ReadKey();
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                // Példányosítunk objektumokat
+                Allat allat1 = new Allat("Bodri", "Puli", "fekete");
+                allat1.setKor(2);
+                Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat1.getNev(), allat1.getKor(), allat1.getFajta(), allat1.getSzin());
+
+                Allat allat2 = new Allat("Bolhás", "Komondor", "fehér");
+                allat2.setKor(5);
+                Console.WriteLine("Az állat neve: {0}, fajtája: {2}, színe: {3}, kora: {1} éves", allat2.getNev(), allat2.getKor(), allat2.getFajta(), allat2.getSzin());
+
+                Allat allat3 = new Allat();
+                allat3.setNev("Bambi"); allat3.setFajta("Német-juhász"); allat3.setSzin("zöld"); allat3.setKor(14);
+                Console.WriteLine("\nAz állat neve: {0}, \nAz állat fajtája: {2}, \nAz állat színe: {3}, \nAz állat kora: {1} éves", allat3.getNev(), allat3.getKor(), allat3.getFajta(), allat3.getSzin());
+
+                Console.WriteLine("\n======================================= Származtatott =======================================");
+                Kutya kutya1 = new Kutya("Bogár", "Puli", "Fekete");
+                kutya1.setKor(6);
+                kutya1.setGazda("Karcsi");
+                Console.WriteLine("\nAz állat neve: {0} \nAz állat fajtája: {1} \nAz állat színe: {2} \nAz állat kora: {3}\nAz állat gazdája: {4}", kutya1.getNev(), kutya1.getKor(), kutya1.getFajta(), kutya1.getSzin(), kutya1.getGazda());
+                Console.WriteLine("Hangja: {0}", kutya1.hangotAd());
+                kutya1.hangotAd();
+
+                Macska macska1 = new Macska("Cirmos", "sziámi", "Fekete");
+                Console.WriteLine("\nAz állat neve: {0} \nAz állat fajtája: {1} \nAz állat színe: {2} \nAz állat kora: {3}", macska1.getNev(), macska1.getKor(), macska1.getFajta(), macska1.getSzin());
+                Console.WriteLine("Hangja: {0}", macska1.hangotAd());
+                macska1.hangotAd();
+
+                Console.ReadKey();
+
+                // Arial Rounded MT Bold
+                // Arial Rounded MT Bold
+                // Arial Rounded MT Bold
+                // Arial Rounded MT Bold
+                // Arial Rounded MT Bold
+            }
         }
     }
 }
