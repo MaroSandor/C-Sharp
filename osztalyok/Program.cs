@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 namespace osztalyok
 {
     // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-
+    // Polimorfizmus példa
+    
     class Allat
     {
         // Osztályváltozók (properties)
@@ -37,11 +34,6 @@ namespace osztalyok
             this.kor = 0;
         }
 
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
         // Arial Rounded MT Bold
 
         // Meghívások
@@ -109,17 +101,31 @@ namespace osztalyok
                 this.hang = hang;
             }
         }
-    }
 
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
-    // Arial Rounded MT Bold
+        // Arial Rounded MT Bold
 
-    class Kutya : Allat
+        class Home
+        {
+            // Osztályváltozó
+            List<Allat> szobak = new List<Allat>();
+            Random r = new Random();
+
+            public Home() { }
+
+            public void allatAdd(Allat p)
+            {
+                this.szobak.Add(p);
+            }
+
+            public Allat getAllat()
+            {
+                return this.szobak[r.Next(0, this.szobak.Count - 1)];
+            }
+        }
+
+        // Poliformizmus példa vége
+
+        class Kutya : Allat
     {
         // Osztály változó
         private string gazda;
@@ -127,7 +133,11 @@ namespace osztalyok
         public Kutya(string nev, string fajta, string szin) : base(nev, fajta, szin) // Konstruktor függvény
         {
             this.gazda = "ismeretlen";
-            this.hang = "vau-vau";
+            this.setNev("neve nincs");
+            this.setSzin("ismeretlen");
+            this.setKor(0);
+            this.setFajta("ismeretlen");
+            this.hang = "A nevem: "+ this.getNev() + "hangom: vau-vau";
         }
 
         public void setGazda(string gazda)
@@ -139,22 +149,28 @@ namespace osztalyok
         {
             return this.gazda;
         }
+    }
 
-        class Macska : Allat
+    class Macska : Allat
+    {
+        // Konstruktor: 
+
+        public Macska(string nev, string fajta, string szin) : base(nev, fajta, szin) // Konstruktor függvény
         {
-
-            public Macska(string nev, string fajta, string szin) : base(nev, fajta, szin) // Konstruktor függvény
-            {
-                this.hang = "miau-miau";
-            }
+            this.hang = "miau-miau";
         }
 
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
-        // Arial Rounded MT Bold
+        public Macska() : base()
+            {
+                this.setNev("neve nincs");
+                this.setSzin("ismeretlen");
+                this.setKor(0);
+                this.setFajta("ismeretlen");
+                this.hang = "A nevem: {0}, hangom: miau-miau"; this.getNev();
+            }
+    }
+
+
         // Arial Rounded MT Bold
 
         class Program
@@ -187,13 +203,29 @@ namespace osztalyok
                 Console.WriteLine("Hangja: {0}", macska1.hangotAd());
                 macska1.hangotAd();
 
-                Console.ReadKey();
+                // Poliformizmus példa
+                Console.WriteLine("============================ Poliformizms példa ============================");
 
-                // Arial Rounded MT Bold
-                // Arial Rounded MT Bold
-                // Arial Rounded MT Bold
-                // Arial Rounded MT Bold
-                // Arial Rounded MT Bold
+                // Példányosítjuk a Home-t
+                Home sweetHome = new Home();
+
+                for (int i = 0; 0 <  20; i++)
+                {
+                    sweetHome.allatAdd(new Macska());
+                }
+
+                // Kihívjuk az állatokat
+                Allat a = new Allat();
+                for (int i = 0; i < 20; i++)
+                {
+                    a = sweetHome.getAllat();
+                    Console.WriteLine("Hangom: {0}", a.hangotAd());
+                    Console.WriteLine("Színem: {0}", a.getSzin());
+                    Console.WriteLine("Fajtám: {0}", a.getFajta());
+                    Console.WriteLine("Korom: {0}", a.getKor());
+                }
+
+                Console.ReadKey();
             }
         }
     }

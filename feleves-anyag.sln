@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamkiiras", "szamkiiras\sz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osztalyok", "osztalyok\osztalyok.csproj", "{6FC71773-E88A-42A4-8F5E-2286AC1FCFC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polimorfizmus", "polimorfizmus\polimorfizmus.csproj", "{BBDD674A-ED37-4D80-A08E-E91AC285EE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{6FC71773-E88A-42A4-8F5E-2286AC1FCFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC71773-E88A-42A4-8F5E-2286AC1FCFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC71773-E88A-42A4-8F5E-2286AC1FCFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDD674A-ED37-4D80-A08E-E91AC285EE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDD674A-ED37-4D80-A08E-E91AC285EE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDD674A-ED37-4D80-A08E-E91AC285EE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDD674A-ED37-4D80-A08E-E91AC285EE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
