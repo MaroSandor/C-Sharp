@@ -9,7 +9,7 @@ namespace korterker
     class Kor
     {
         // Osztályváltozók
-        private int r;
+        protected int r;
         private double terulet,
             kerulet;
 
@@ -47,6 +47,38 @@ namespace korterker
         {
             return this.r;
         }
+    }
+
+    class Henger : Kor
+    {
+        // Osztályváltozók
+        private double terfogat;
+        private int magassag;
+
+        public Henger() { }
+        
+        public Henger (int r, int magassag, double terfogat)
+        {
+            this.r = r;
+            this.magassag = magassag;
+            this.terfogat = terfogat;
+        }
+        public void setMagassag()
+        {
+            int magas = Convert.ToInt32(Console.ReadLine());
+            if (magas != 0)
+            {
+                this.magassag = magas;
+            }
+        }
+
+        public void setTerfogat(double terfogat)
+        {
+            this.terfogat = terfogat;
+        }
+
+        public double getTerfogat
+
     }
 
     class Program
