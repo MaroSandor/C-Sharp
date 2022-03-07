@@ -10,8 +10,10 @@ namespace Vektor
     {
         // Osztályváltozók
         private int elemekszama,
-            elemek,
-            ertek;
+            ertek,
+            atlagertek,
+            min,
+            max;
         private int[] vektorhossz;
 
         // Random szám generálás
@@ -47,6 +49,45 @@ namespace Vektor
             return this.ertek;
         }
 
+        public void setFindAtlag()
+        {
+            int atlag;
+            atlag = this.ertek / vektorhossz.Length;
+            this.atlagertek = atlag;
+        }
+
+        public double getFindAtlag()
+        {
+            Console.WriteLine("Az átlag: {0}", this.atlagertek);
+            return this.atlagertek;
+        }
+
+        public void setMinimum()
+        {
+            int minimum;
+            minimum = vektorhossz.Min();
+            this.min = minimum;
+        }
+
+        public int getMinimum()
+        {
+            Console.WriteLine("A legkisebb elem: {0}", this.min);
+            return this.min;
+        }
+
+        public void setMaximum()
+        {
+            int maximum;
+            maximum = vektorhossz.Max();
+            this.max = maximum;
+        }
+
+        public int getMaximum()
+        {
+            Console.WriteLine("A legnagyobb elem: {0}", this.max);
+            return this.max;
+        }
+
         class Program
         {
             static void Main(string[] args)
@@ -55,6 +96,10 @@ namespace Vektor
                 a.Feltoltes();
                 a.setOsszeg();
                 a.getOsszeg();
+                a.setFindAtlag();
+                a.getFindAtlag();
+                a.getMinimum();
+                a.getMaximum();
                 Console.ReadKey();
             }
         }
