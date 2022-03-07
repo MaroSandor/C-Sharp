@@ -52,33 +52,36 @@ namespace korterker
     class Henger : Kor
     {
         // Osztályváltozók
-        private double terfogat;
-        private int magassag;
+        private double terfogat,
+            magassag;
 
-        public Henger() { }
+        public Henger() : base () { } // Konstruktor
         
-        public Henger (int r, int magassag, double terfogat)
+        public Henger (double magassag, double terfogat)
         {
-            this.r = r;
             this.magassag = magassag;
             this.terfogat = terfogat;
         }
+
         public void setMagassag()
         {
-            int magas = Convert.ToInt32(Console.ReadLine());
-            if (magas != 0)
+            double magasertek = Convert.ToInt32(Console.ReadLine());
+            if (magasertek != 0)
             {
-                this.magassag = magas;
+                this.magassag = magasertek;
             }
         }
 
-        public void setTerfogat(double terfogat)
+        public double getMagassag()
         {
-            this.terfogat = terfogat;
+            return this.magassag;
         }
 
-        public double getTerfogat
-
+        public double Terfogat()
+        {
+            this.terfogat = getMagassag() * terszamitas();
+            return this.terfogat;
+        }
     }
 
     class Program
@@ -86,9 +89,14 @@ namespace korterker
         static void Main(string[] args)
         {
             Console.WriteLine("Adja meg a sugarat: ");
-            Kor a = new Kor();
+            Henger a = new Henger();
             a.setBekeres();
-            Console.WriteLine("A kör sugara: {0}, területe: {1}, a kör kerülete: {2}.", a.getBekeres(), a.terszamitas(), a. kerszamitas());
+            Console.WriteLine("A kör sugara: {0}, területe: {1}, a kör kerülete: {2}.", a.getBekeres(), a.terszamitas(), a.kerszamitas());
+
+            Console.WriteLine("Add meg a henger magasságát: ");
+            a.setMagassag();
+            Console.WriteLine("A henger térfogata: {0}", a.Terfogat());
+
             Console.ReadKey();
         }
     }
