@@ -13,7 +13,9 @@ namespace Vektor
             ertek,
             atlagertek,
             min,
-            max;
+            max,
+            minimumIndex,
+            maximumIndex;
         private int[] vektorhossz;
 
         // Random szám generálás
@@ -64,27 +66,45 @@ namespace Vektor
 
         public void setMinimum()
         {
-            int minimum;
+            int minimum,
+                minindex = 0;
             minimum = vektorhossz.Min();
             this.min = minimum;
+            for (int i = 0; i < vektorhossz.Length; i++)
+            {
+                if (vektorhossz[i] == minimum)
+                {
+                    minindex = i;
+                }
+            }
+            this.minimumIndex = minindex;
         }
 
         public int getMinimum()
         {
-            Console.WriteLine("A legkisebb elem: {0}", this.min);
+            Console.WriteLine("A legkisebb elem: {0}, helye: {1}", this.min, this.minimumIndex);
             return this.min;
         }
 
         public void setMaximum()
         {
-            int maximum;
+            int maximum,
+                maxindex = 0;
             maximum = vektorhossz.Max();
             this.max = maximum;
+            for (int i = 0; i < vektorhossz.Length; i++)
+            {
+                if (vektorhossz[i] == maximum)
+                {
+                    maxindex = i;
+                }
+            }
+            this.maximumIndex = maxindex;
         }
 
         public int getMaximum()
         {
-            Console.WriteLine("A legnagyobb elem: {0}", this.max);
+            Console.WriteLine("A legnagyobb elem: {0}, helye: {1}", this.max, this.maximumIndex);
             return this.max;
         }
 
@@ -98,7 +118,9 @@ namespace Vektor
                 a.getOsszeg();
                 a.setFindAtlag();
                 a.getFindAtlag();
+                a.setMinimum();
                 a.getMinimum();
+                a.setMaximum();
                 a.getMaximum();
                 Console.ReadKey();
             }
