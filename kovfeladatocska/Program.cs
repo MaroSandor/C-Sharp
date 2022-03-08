@@ -31,7 +31,7 @@ namespace Vektor
             vektorhossz = new int[elemekszama];
             for (int i = 0; i < elemekszama; i++)
             {
-                vektorhossz[i] = rand.Next(0, 100);
+                vektorhossz[i] = rand.Next(0, 1000);
             }
         }
 
