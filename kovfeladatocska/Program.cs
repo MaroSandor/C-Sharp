@@ -108,6 +108,12 @@ namespace Vektor
             return this.max;
         }
 
+        class Matrix : Vektor
+        {
+            // Osztályváltozók
+            private
+        }
+
         class Program
         {
             static void Main(string[] args)
