@@ -9,13 +9,21 @@ namespace Vektor
     class Vektor
     {
         // Osztályváltozók
-        private int elemekszama,
-            ertek,
+        protected int elemekszama;
+        private int ertek,
+            ertek2,
             atlagertek,
+            atlagertek2,
             min,
+            min2,
             max,
+            max2,
             minimumIndex,
-            maximumIndex;
+            minimumIndexSor,
+            minimumIndexOszlop,
+            maximumIndex,
+            maximumIndexSor,
+            maximumIndexOszlop;
         private int[] vektorhossz;
 
         // Random szám generálás
@@ -31,7 +39,7 @@ namespace Vektor
             vektorhossz = new int[elemekszama];
             for (int i = 0; i < elemekszama; i++)
             {
-                vektorhossz[i] = rand.Next(0, 1000);
+                vektorhossz[i] = rand.Next(0, 100);
             }
         }
 
@@ -111,24 +119,146 @@ namespace Vektor
         class Matrix : Vektor
         {
             // Osztályváltozók
-            private
-        }
+            private int[,] vektornakhossza;
 
-        class Program
-        {
-            static void Main(string[] args)
+            public Matrix() : base() { }
+
+            public void matrixFel()
             {
-                Vektor a = new Vektor();
-                a.Feltoltes();
-                a.setOsszeg();
-                a.getOsszeg();
-                a.setFindAtlag();
-                a.getFindAtlag();
-                a.setMinimum();
-                a.getMinimum();
-                a.setMaximum();
-                a.getMaximum();
-                Console.ReadKey();
+                Console.WriteLine("Adja meg a mátrix nagyságát:");
+                elemekszama = int.Parse(Console.ReadLine());
+                vektornakhossza = new int[elemekszama, elemekszama];
+                for (int i = 0; i < elemekszama; i++)
+                {
+                    for (int j = 0; j < elemekszama; j++)
+                    {
+                        vektornakhossza[i, j] = rand.Next(0, 100);
+                        Console.Write("{0,4}", vektornakhossza[i, j]);
+                    }
+                    Console.WriteLine();
+                }
+            }
+
+            public void setOsszes()
+            {
+                int osszes = 0;
+                for (int i = 0; i < vektornakhossza.GetLength(0); i++)
+                {
+                    for (int j = 0; j < vektornakhossza.GetLength(1); j++)
+                    {
+                        osszes = osszes + vektornakhossza[i, j];
+                    }
+                    this.ertek2 = osszes;
+                }
+            }
+
+            public int getOsszes()
+            {
+                Console.WriteLine("Az összeg: {0}", this.ertek2);
+                return this.ertek2;
+            }
+
+            public void setMatrixAtlag()
+            {
+                int atlag;
+                atlag = this.ertek2 / vektornakhossza.Length;
+                this.atlagertek2 = atlag;
+            }
+
+            public double getMatrixAtlag()
+            {
+                Console.WriteLine("Az átlag: {0}", this.atlagertek2);
+                return this.atlagertek2;
+            }
+
+            public void setMatrixMin()
+            {
+                int minimum,
+                    minindexSor = 0,
+                    minindexOszlop = 0;
+                minimum = vektornakhossza.Cast<int>().Min();
+                this.min2 = minimum;
+                bool kilep = false;
+                for (int i = 0; i < vektornakhossza.GetLength(0); i++)
+                {
+                    for (int j = 0; j < vektornakhossza.GetLength(1); j++)
+                    {
+                        if (vektornakhossza[i, j] == minimum)
+                        {
+                            kilep = true;
+                            minindexSor = i;
+                            minindexOszlop = j;
+                            break;
+                        }
+                    }
+                    if (kilep)
+                    {
+                        break;
+                    }
+                }
+                this.minimumIndexSor = minindexSor;
+                this.minimumIndexOszlop = minindexOszlop;
+            }
+
+            public int getMatrixMin()
+            {
+                Console.WriteLine("A legkisebb elem: {0}, helye: {1}, {2}", this.min2, this.minimumIndexSor, this.minimumIndexOszlop);
+                return this.min2;
+            }
+
+            public void setMatrixMax()
+            {
+                int maximum,
+                    maxindexsor = 0,
+                    maxindexoszlop = 0;
+                maximum = vektornakhossza.Cast<int>().Max();
+                this.max2 = maximum;
+                for (int i = 0; i < vektorhossz.GetLength(0); i++)
+                {
+                    for (int j = 0; j < vektornakhossza.GetLength(1); j++)
+                    {
+                        if (vektornakhossza[i, j] == maximum)
+                        {
+                            maxindexsor = i;
+                            maxindexoszlop = j;
+                        }
+                    }
+                }
+                this.maximumIndexSor = maxindexsor;
+                this.maximumIndexOszlop = maxindexoszlop;
+            }
+
+            public int getMatrixMax()
+            {
+                Console.WriteLine("A legnagyobb elem: {0}, helye: {1}, {2}", this.max2, this.maximumIndexSor, this.maximumIndexOszlop);
+                return this.max2;
+            }
+
+            class Program
+            {
+                static void Main(string[] args)
+                {
+                    Matrix a = new Matrix();
+                    a.Feltoltes();
+                    a.setOsszeg();
+                    a.getOsszeg();
+                    a.setFindAtlag();
+                    a.getFindAtlag();
+                    a.setMinimum();
+                    a.getMinimum();
+                    a.setMaximum();
+                    a.getMaximum();
+                    a.matrixFel();
+                    a.setOsszes();
+                    a.getOsszes();
+                    a.setMatrixAtlag();
+                    a.getMatrixAtlag();
+                    a.setMatrixMin();
+                    a.getMatrixMin();
+                    a.setMatrixMax();
+                    a.getMatrixMax();
+                    Console.ReadKey();
+                }
             }
         }
     }
