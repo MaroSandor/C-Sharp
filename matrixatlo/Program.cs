@@ -8,19 +8,66 @@ namespace matrixatlo
 {
     class Matrix
     {
+        // A program kérjen be egy számot a felhasználótól! Ez lesz az N * N mátrix oldalainak értéke. Lehet páros, lehet páratlan.
+        // Majd a négyzet átlói mentén elhelyezkedő számokat adjuk össze (mind a két átlón) és ezt írassuk ki.
+        // Majd ezen két átló metszéspontja alatti területben található elemeket is adjuk össze és írassuk ki!
+
+
         // Osztályváltozók
+        private int ertek,
+            atlo_a,
+            atlo_b,
+            egyikatlo,
+            masikatlo;
+        private int[,] matrix;
 
         public Matrix()
         {
-
+            this.egyikatlo = atlo_a;
+            this.masikatlo = atlo_b;
         }
 
+        Random rand = new Random();
+
+        public void MatrixFeltoltes()
+        {
+            Console.WriteLine("Adja meg a mátrix nagyságát:");
+            ertek = int.Parse(Console.ReadLine());
+            matrix = new int[ertek, ertek];
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j =  0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = rand.Next(0, 100);
+                    Console.Write("{0,4}", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public void aAtlo()
+        {
+            int osszeg = 0;
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                osszeg = osszeg + matrix[i, i];
+            }
+            if (matrix.GetLength(0) % 2 != 0)
+            {
+                osszeg = osszeg - matrix[matrix.GetLength(0) / 2 +1, matrix.GetLength(0) / 2 + 1];
+            }
+            Console.WriteLine(osszeg);
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
+            Matrix a = new Matrix();
+            a.MatrixFeltoltes();
+            a.aAtlo();
+            Console.ReadKey();
         }
     }
 }
