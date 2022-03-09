@@ -56,6 +56,10 @@ namespace matrixatlo
             {
                 osszeg = osszeg - matrix[matrix.GetLength(0) / 2 +1, matrix.GetLength(0) / 2 + 1];
             }
+            for (int j = ertek; j < matrix.GetLength(0); j--)
+            {
+                osszeg = osszeg + matrix[j, j];
+            }
             Console.WriteLine(osszeg);
         }
     }
