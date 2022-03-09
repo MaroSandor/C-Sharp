@@ -213,15 +213,22 @@ namespace Vektor
                     maxindexoszlop = 0;
                 maximum = vektornakhossza.Cast<int>().Max();
                 this.max2 = maximum;
+                bool kilep = false;
                 for (int i = 0; i < vektorhossz.GetLength(0); i++)
                 {
                     for (int j = 0; j < vektornakhossza.GetLength(1); j++)
                     {
                         if (vektornakhossza[i, j] == maximum)
                         {
+                            kilep = true;
                             maxindexsor = i;
                             maxindexoszlop = j;
+                            break;
                         }
+                    }
+                    if (kilep)
+                    {
+                        break;
                     }
                 }
                 this.maximumIndexSor = maxindexsor;
