@@ -19,7 +19,7 @@ namespace dinnye
             // Bekérés
 
             Console.WriteLine("Kérem a dinnye átmérőjét!");
-            atmero = int.Parse(Console.ReadLine());
+            atmero = int.Parse(Console.ReadLine()); 
             Console.WriteLine("Kérem a dinnyék számát!");
             db = int.Parse(Console.ReadLine());
 

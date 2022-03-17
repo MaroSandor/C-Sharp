@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vektor", "kovfeladatocska\v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixatlo", "matrixatlo\matrixatlo.csproj", "{229E9CBC-7B78-4BBE-97FD-551453B450D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "halmazok", "halmazok\halmazok.csproj", "{DC17A0EC-6031-464C-B8CB-5411A06A4C96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{229E9CBC-7B78-4BBE-97FD-551453B450D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229E9CBC-7B78-4BBE-97FD-551453B450D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229E9CBC-7B78-4BBE-97FD-551453B450D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
