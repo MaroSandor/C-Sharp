@@ -120,6 +120,65 @@ namespace halmazok
                 Console.Write("{0} ", this.AB[x]);
             }
         }
+
+        public void BAhalmaz()
+        {
+            if (!this.jeloles)
+            {
+                Metszet();
+            }
+            int l = 0;
+            bool paros = false;
+            for (int i = 0; i < this.tombB.Length; i++)
+            {
+                paros = false;
+                for (int j = 0; j < this.metszet.Length; j++)
+                {
+                    if (this.tombB[i] == this.metszet[j])
+                    {
+                        paros = true;
+                        break;
+                    }
+                }
+                if (!paros)
+                {
+                    this.BA[l] = this.tombB[i];
+                    l++;
+                }
+            }
+            Console.WriteLine("\nB\\A halmaz:");
+            for (int x = 0; x < l; x++)
+            {
+                Console.Write("{0} ", this.BA[x]);
+            }
+        }
+
+        public void  Unio()
+        {
+            if (!this.jeloles)
+            {
+                Metszet();
+            }
+            int l = 0;
+            bool paros = false;
+            for (int i = 0; i < this.tombB.Length; i++)
+            {
+                paros = false;
+                for (int j = 0; j < this.metszet.Length; j++)
+                {
+                    if (this.tombB[i] == this.metszet[j])
+                    {
+                        paros = true;
+                        break;
+                    }
+                }
+                if (!paros)
+                {
+                    this.BA[l] = this.tombB[i];
+                    l++;
+                }
+            }
+        }
     }
     class Program
     {
@@ -129,6 +188,7 @@ namespace halmazok
             a.Feltoltes();
             a.Metszet();
             a.ABhalmaz();
+            a.BAhalmaz();
             Console.ReadKey();
         }
     }
