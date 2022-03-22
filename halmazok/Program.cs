@@ -28,6 +28,7 @@ namespace halmazok
             unio,
             AB,
             BA,
+            Kulonbseg,
             tombB;
         private bool jeloles = false;
 
@@ -46,8 +47,7 @@ namespace halmazok
             this.tombB = new int[elemszam];
             this.metszet = new int[elemszam * 2];
             this.unio = new int[elemszam * 2];
-            this.AB = new int[elemszam];
-            this.BA = new int[elemszam];
+            this.Kulonbseg = new int[elemszam];
             for (int i = 0; i < elemszam; i++)
             {
                 this.tombA[i] = rnd.Next(-100, 100);
@@ -89,39 +89,39 @@ namespace halmazok
             this.jeloles = true;
         }
 
-        public void ABhalmaz()
-        {
-            if (!this.jeloles)
-            {
-                Metszet();
-            }
-            int k = 0;
-            bool paros = false;
-            for (int i = 0; i < this.tombA.Length; i++)
-            {
-                paros = false;
-                for (int j = 0; j < this.metszet.Length; j++)
-                {
-                    if (this.tombA[i] == this.metszet[j])
-                    {
-                        paros = true;
-                        break;
-                    }
-                }
-                if (!paros)
-                {
-                    this.AB[k] = this.tombA[i];
-                    k++;
-                }
-            }
-            Console.WriteLine("\nA\\B halmaz:");
-            for (int x = 0; x < k; x++)
-            {
-                Console.Write("{0} ", this.AB[x]);
-            }
-        }
+        //public void ABhalmaz()
+        //{
+        //    if (!this.jeloles)
+        //    {
+        //        Metszet();
+        //    }
+        //    int k = 0;
+        //    bool paros = false;
+        //    for (int i = 0; i < this.tombA.Length; i++)
+        //    {
+        //        paros = false;
+        //        for (int j = 0; j < this.metszet.Length; j++)
+        //        {
+        //            if (this.tombA[i] == this.metszet[j])
+        //            {
+        //                paros = true;
+        //                break;
+        //            }
+        //        }
+        //        if (!paros)
+        //        {
+        //            this.AB[k] = this.tombA[i];
+        //            k++;
+        //        }
+        //    }
+        //    Console.WriteLine("\nA\\B halmaz:");
+        //    for (int x = 0; x < k; x++)
+        //    {
+        //        Console.Write("{0} ", this.AB[x]);
+        //    }
+        //}
 
-        public void BAhalmaz()
+        public void BAhalmaz(int[] Metszet2, int[] Kulonbseg, int[] Alap)
         {
             if (!this.jeloles)
             {
@@ -142,15 +142,26 @@ namespace halmazok
                 }
                 if (!paros)
                 {
-                    this.BA[l] = this.tombB[i];
+                    this.Kulonbseg[l] = this.tombB[i];
                     l++;
                 }
             }
-            Console.WriteLine("\nB\\A halmaz:");
             for (int x = 0; x < l; x++)
             {
-                Console.Write("{0} ", this.BA[x]);
+                Console.Write("{0} ", this.Kulonbseg[x]);
             }
+        }
+
+        public void AbolB()
+        {
+            Console.WriteLine("\nA\\B halmaz:");
+            BAhalmaz(this.metszet, this.AB, this.tombA);
+        }
+
+        public void BbolA()
+        {      
+            Console.WriteLine("\nB\\A halmaz:");
+            BAhalmaz(this.metszet, this.BA, this.tombB);
         }
 
         public void Unio()
@@ -196,8 +207,8 @@ namespace halmazok
             Halmazok a = new Halmazok();
             a.Feltoltes();
             a.Metszet();
-            a.ABhalmaz();
-            a.BAhalmaz();
+            a.AbolB();
+            a.BbolA();
             a.Unio();
             Console.ReadKey();
         }
