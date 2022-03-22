@@ -159,14 +159,14 @@ namespace halmazok
             {
                 Metszet();
             }
-            int l = 0;
+            int k = 0;
             bool paros = false;
-            for (int i = 0; i < this.tombB.Length; i++)
+            for (int i = 0; i < this.tombA.Length; i++)
             {
                 paros = false;
                 for (int j = 0; j < this.metszet.Length; j++)
                 {
-                    if (this.tombB[i] == this.metszet[j])
+                    if (this.tombA[i] == this.metszet[j])
                     {
                         paros = true;
                         break;
@@ -174,9 +174,18 @@ namespace halmazok
                 }
                 if (!paros)
                 {
-                    this.BA[l] = this.tombB[i];
-                    l++;
+                    this.AB[k] = this.tombA[i];
+                    k++;
                 }
+            }
+            Console.WriteLine("\nUnió:");
+            for (int x = 0; x < k; x++)
+            {
+                Console.Write("{0} ", this.AB[x]);
+            }
+            for (int i = 0; i < tombB.Length; i++)
+            {
+                Console.Write("{0} ", tombB[i]);
             }
         }
     }
@@ -189,6 +198,7 @@ namespace halmazok
             a.Metszet();
             a.ABhalmaz();
             a.BAhalmaz();
+            a.Unio();
             Console.ReadKey();
         }
     }
