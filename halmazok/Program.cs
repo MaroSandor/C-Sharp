@@ -102,7 +102,7 @@ namespace halmazok
                 paros = false;
                 for (int j = 0; j < this.metszet.Length; j++)
                 {
-                    if (this.tombA[i] == this.metszet[i])
+                    if (this.tombA[i] == this.metszet[j])
                     {
                         paros = true;
                         break;
