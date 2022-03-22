@@ -28,6 +28,7 @@ namespace halmazok
             unio,
             AB,
             BA,
+            Alap,
             Kulonbseg,
             tombB;
         private bool jeloles = false;
@@ -47,6 +48,9 @@ namespace halmazok
             this.tombB = new int[elemszam];
             this.metszet = new int[elemszam * 2];
             this.unio = new int[elemszam * 2];
+            this.Alap = new int[elemszam];
+            this.AB = new int[elemszam];
+            this.BA = new int[elemszam];
             this.Kulonbseg = new int[elemszam];
             for (int i = 0; i < elemszam; i++)
             {
@@ -129,12 +133,12 @@ namespace halmazok
             }
             int l = 0;
             bool paros = false;
-            for (int i = 0; i < this.tombB.Length; i++)
+            for (int i = 0; i < Alap.Length; i++)
             {
                 paros = false;
-                for (int j = 0; j < this.metszet.Length; j++)
+                for (int j = 0; j < Metszet2.Length; j++)
                 {
-                    if (this.tombB[i] == this.metszet[j])
+                    if (Alap[i] == Metszet2[j])
                     {
                         paros = true;
                         break;
@@ -142,13 +146,13 @@ namespace halmazok
                 }
                 if (!paros)
                 {
-                    this.Kulonbseg[l] = this.tombB[i];
+                    Kulonbseg[l] = Alap[i];
                     l++;
                 }
             }
             for (int x = 0; x < l; x++)
             {
-                Console.Write("{0} ", this.Kulonbseg[x]);
+                Console.Write("{0} ", Kulonbseg[x]);
             }
         }
 
@@ -185,14 +189,14 @@ namespace halmazok
                 }
                 if (!paros)
                 {
-                    this.AB[k] = this.tombA[i];
+                    this.Kulonbseg[k] = this.tombA[i];
                     k++;
                 }
             }
             Console.WriteLine("\nUnió:");
             for (int x = 0; x < k; x++)
             {
-                Console.Write("{0} ", this.AB[x]);
+                Console.Write("{0} ", this.Kulonbseg[x]);
             }
             for (int i = 0; i < tombB.Length; i++)
             {

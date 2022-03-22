@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixatlo", "matrixatlo\ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "halmazok", "halmazok\halmazok.csproj", "{DC17A0EC-6031-464C-B8CB-5411A06A4C96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "idojaras", "idojaras\idojaras.csproj", "{16BE28F0-48FC-4099-9605-A55A7E78AE41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC17A0EC-6031-464C-B8CB-5411A06A4C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BE28F0-48FC-4099-9605-A55A7E78AE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BE28F0-48FC-4099-9605-A55A7E78AE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BE28F0-48FC-4099-9605-A55A7E78AE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BE28F0-48FC-4099-9605-A55A7E78AE41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
