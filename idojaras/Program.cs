@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace idojaras
 {
+    class Idojaras
+    {
+        // Osztályváltozók
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            // Meghívások
+
+            Console.ReadKey();
         }
     }
 }
