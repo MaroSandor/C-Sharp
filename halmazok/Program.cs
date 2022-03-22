@@ -153,7 +153,7 @@ namespace halmazok
             }
         }
 
-        public void  Unio()
+        public void Unio()
         {
             if (!this.jeloles)
             {
