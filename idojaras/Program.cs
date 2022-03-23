@@ -9,58 +9,45 @@ namespace idojaras
     class Idojaras
     {
         // Osztályváltozók
-        private int ev,
-            nap,
-            napok,
-            min_homerseklet = 0,
-            max_homerseklet = 0;
-        private string honap,
-            honapneve,
-            evszak,
-            evszakok;
-        private int[,] azonosit = new int[12, 31];
-        private int[,] azonosit2 = new int[12, 31];
+        private int napok;
+        private string honapneve;
+        private int[,] minHok = new int[12, 30];
+        private int[,] maxHok = new int[12, 30];
         private string[] honapok = new string[] { "január", "február", "március", "április", "május", "június", "július", "augusztus", "szeptember", "október", "november", "december" };
         Random maxho = new Random();
         Random minho = new Random();
 
-        public Idojaras()
-        {
-            this.evszak = evszakok;
-            this.honap = honapneve;
-            this.nap = napok;
-        }
+        public Idojaras() { }
 
         public void datumBekeres()
         {
-            Console.Write("Kérem adja meg az évet (ÉÉÉÉ): ");
-            ev = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Kérem adja meg a hónapot (név szerint pontosan): ");
+            Console.Write("Kérem adja meg a hónapot (betűvel helyesen): ");
             honapneve = Console.ReadLine();
             Console.Write("Kérem adja meg a napot (1-31): ");
             napok = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nA megadott dátum: {0} {1}.", honapneve, napok);
         }
 
         public void feltoltesMin()
         {
-            for (int i = 0; i < azonosit.GetLength(0); i++)
+            for (int i = 0; i < minHok.GetLength(0); i++)
             {
-                for (int j = 0; j < azonosit.GetLength(1); j++)
+                for (int j = 0; j < minHok.GetLength(1); j++)
                 {
-                    switch (honapneve)
+                    switch (honapok[i])
                     {
-                        case "január": azonosit[i, j] = maxho.Next(-20, 0); break;
-                        case "február": azonosit[i, j] = maxho.Next(-20, 0); break;
-                        case "március": azonosit[i, j] = maxho.Next(0, 15); break;
-                        case "április": azonosit[i, j] = maxho.Next(0, 15); break;
-                        case "május": azonosit[i, j] = maxho.Next(0, 15); break;
-                        case "június": azonosit[i, j] = maxho.Next(10, 20); break;
-                        case "július": azonosit[i, j] = maxho.Next(10, 20); break;
-                        case "augusztus": azonosit[i, j] = maxho.Next(10, 20); break;
-                        case "szeptember": azonosit[i, j] = maxho.Next(20, 40); break;
-                        case "október": azonosit[i, j] = maxho.Next(20, 40); break;
-                        case "november": azonosit[i, j] = maxho.Next(20, 40); break;
-                        case "december": azonosit[i, j] = maxho.Next(-20, 0); break;
+                        case "január": minHok[i, j] = maxho.Next(-20, 0); break;
+                        case "február": minHok[i, j] = maxho.Next(-20, 0); break;
+                        case "március": minHok[i, j] = maxho.Next(0, 15); break;
+                        case "április": minHok[i, j] = maxho.Next(0, 15); break;
+                        case "május": minHok[i, j] = maxho.Next(0, 15); break;
+                        case "június": minHok[i, j] = maxho.Next(10, 20); break;
+                        case "július": minHok[i, j] = maxho.Next(10, 20); break;
+                        case "augusztus": minHok[i, j] = maxho.Next(10, 20); break;
+                        case "szeptember": minHok[i, j] = maxho.Next(20, 40); break;
+                        case "október": minHok[i, j] = maxho.Next(20, 40); break;
+                        case "november": minHok[i, j] = maxho.Next(20, 40); break;
+                        case "december": minHok[i, j] = maxho.Next(-20, 0); break;
                     }
                 }
             }
@@ -68,24 +55,24 @@ namespace idojaras
 
         public void feltoltesMax()
         {
-            for (int i = 0; i < azonosit2.GetLength(0); i++)
+            for (int i = 0; i < maxHok.GetLength(0); i++)
             {
-                for (int j = 0; j < azonosit2.GetLength(1); j++)
+                for (int j = 0; j < maxHok.GetLength(1); j++)
                 {
-                    switch (honapneve)
+                    switch (honapok[i])
                     {
-                        case "január": azonosit2[i, j] = minho.Next(0, 10); break;
-                        case "február": azonosit2[i, i] = minho.Next(0, 10); break;
-                        case "március": azonosit2[i, j] = minho.Next(15, 25); break;
-                        case "április": azonosit2[i, j] = minho.Next(15, 25); break;
-                        case "május": azonosit2[i, j] = minho.Next(15, 25); break;
-                        case "június": azonosit2[i, j] = minho.Next(10, 20); break;
-                        case "július": azonosit2[i, j] = minho.Next(10, 20); break;
-                        case "augusztus": azonosit2[i, j] = minho.Next(10, 20); break;
-                        case "szeptember": azonosit2[i, j] = minho.Next(5, 15); break;
-                        case "október": azonosit2[i, j] = minho.Next(5, 15); break;
-                        case "november": azonosit2[i, j] = minho.Next(5, 15); break;
-                        case "december": azonosit2[i, j] = minho.Next(0, 10); break;
+                        case "január": maxHok[i, j] = minho.Next(0, 10); break;
+                        case "február": maxHok[i, i] = minho.Next(0, 10); break;
+                        case "március": maxHok[i, j] = minho.Next(15, 25); break;
+                        case "április": maxHok[i, j] = minho.Next(15, 25); break;
+                        case "május": maxHok[i, j] = minho.Next(15, 25); break;
+                        case "június": maxHok[i, j] = minho.Next(10, 20); break;
+                        case "július": maxHok[i, j] = minho.Next(10, 20); break;
+                        case "augusztus": maxHok[i, j] = minho.Next(10, 20); break;
+                        case "szeptember": maxHok[i, j] = minho.Next(5, 15); break;
+                        case "október": maxHok[i, j] = minho.Next(5, 15); break;
+                        case "november": maxHok[i, j] = minho.Next(5, 15); break;
+                        case "december": maxHok[i, j] = minho.Next(0, 10); break;
                     }
                 }
             }
@@ -93,8 +80,7 @@ namespace idojaras
 
         public void kiValasztasMin()
         {
-            for (int i = 0; i < azonosit.GetLength(0);)
-            {
+            int i = 0;
                 switch (honapneve)
                 {
                     case "január": i = 0; break;
@@ -110,19 +96,12 @@ namespace idojaras
                     case "november": i = 10; break;
                     case "december": i = 11; break;
                 }
-                for (int j = 1; j < azonosit.GetLength(1);)
-                {
-                    napok = j;
-                    Console.WriteLine("A minimum hőmérséklet: {0}", azonosit[j, i]);
-                    break;
-                }
-            }
+                    Console.WriteLine("A napi minimum hőmérséklet: {0} °C", minHok[i, napok-1]);
         }
 
         public void kiValasztasMax()
         {
-            for (int i = 0; i < azonosit.GetLength(0);)
-            {
+            int i = 0;
                 switch (honapneve)
                 {
                     case "január": i = 0; break;
@@ -138,46 +117,7 @@ namespace idojaras
                     case "november": i = 10; break;
                     case "december": i = 11; break;
                 }
-                for (int j = 1; j < azonosit.GetLength(1);)
-                {
-                    j = napok;
-                    Console.WriteLine("A maximum hőmérséklet: {0}", azonosit[j, i]);
-                    break;
-                }
-            }
-
-            //public void randomHo()
-            //{
-            //    if (honapneve == "december" || honapneve == "január" || honapneve == "február") {
-            //        min_homerseklet = minho.Next(-20, 0);
-            //        max_homerseklet = maxho.Next(0, 10);
-            //    } else if (honapneve == "március" || honapneve == "április" || honapneve == "május")
-            //    {
-            //        min_homerseklet = minho.Next(0, 15);
-            //        max_homerseklet = maxho.Next(15, 25);
-            //    } else if (this.honapneve == "június" || this.honapneve == "július" || this.honapneve == "augusztus")
-            //    {
-            //        min_homerseklet = minho.Next(10, 20);
-            //        max_homerseklet = maxho.Next(20, 40);
-            //    } else if (this.honapneve == "szeptember" || this.honapneve == "október" || this.honapneve == "november")
-            //    {
-            //        min_homerseklet = minho.Next(5, 10);
-            //        max_homerseklet = maxho.Next(10, 25);
-            //    }
-            //    Console.WriteLine("A dátum: {0}.{1}.{2}.", this.ev, this.honapneve, this.napok);
-            //    Console.Write("A minimum hőmérséklet: {0}", min_homerseklet);
-            //    Console.Write("\nA maximum hőmérséklet: {0}", max_homerseklet);
-            //   }
-
-            //public int getMinHom()
-            //{
-            //    return min_homerseklet;
-            //}
-
-            //public int getMaxHom()
-            //{
-            //    return max_homerseklet;
-            //}
+                    Console.WriteLine("\nA napi maximum hőmérséklet: {0} °C", maxHok[i, napok-1]);
         }
 
         class Program
