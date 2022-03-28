@@ -21,7 +21,7 @@ namespace kivetelkezeles
                 }
                 catch (FormatException a)
                 {
-                    Console.WriteLine("Számot kérek!");
+                    Console.WriteLine("Számot kérek!", a);
                 }
             } while ();
         }
