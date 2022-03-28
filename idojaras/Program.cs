@@ -123,7 +123,7 @@ namespace idojaras
 
         public void napiAtlag()
         {
-            double atlag = 0;
+            double napiatlag = 0;
             if (maxHok[i, napok - 1] >= 0 && minHok[i, napok - 1] >= 0)
             {
                 atlag = maxHok[i, napok - 1] - ((maxHok[i, napok - 1] - minHok[i, napok - 1]) / 2);
@@ -132,9 +132,15 @@ namespace idojaras
                 atlag = minHok[i, napok - 1] - ((minHok[i, napok - 1] - maxHok[i, napok - 1]) / 2);
             } else if (minHok[i, napok - 1] <= 0 && maxHok[i, napok - 1] >= 0)
             {
-                atlag = minHok[i, napok - 1] + (maxHok[i, napok - 1] + -1 * (minHok[i, napok - 1]) / 2);
+                atlag = minHok[i, napok - 1] + ((maxHok[i, napok - 1] + -1 * (minHok[i, napok - 1])) / 2);
             }
-            Console.WriteLine("A napi átlag: {0} °C", atlag);
+            Console.WriteLine("A napi átlag: {0} °C", napiatlag);
+        }
+
+        public void haviAtlag()
+        {
+            double haviatlag = 0;
+            Console.WriteLine("A havi átlag: {0} °C", haviatlag);
         }
     }
 
@@ -150,6 +156,7 @@ namespace idojaras
                 osztaly.kiValasztasMax();
                 osztaly.kiValasztasMin();
                 osztaly.napiAtlag();
+                osztaly.haviAtlag();
                 Console.ReadKey();
             }
         }
