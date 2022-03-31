@@ -11,19 +11,28 @@ namespace kivetelkezeles
         static void Main(string[] args)
         {
             int a;
+            bool vizs = true;
 
             do
             {
                 try
                 {
-                    Console.WriteLine("Adj egy számot!");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    int szam = 0;
+                    Console.WriteLine("Adjon meg egy számot:");
+                    a = int.Parse(Console.ReadLine());
+                    szam = a / szam;
                 }
-                catch (FormatException a)
+                catch (FormatException e)
                 {
-                    Console.WriteLine("Számot kérek!", a);
+                    Console.WriteLine("Ez nem egy szám!");
+                    vizs = false;
                 }
-            } while ();
+                catch (DivideByZeroException e)
+                {
+                    Console.WriteLine("Nullával való osztás értelmetlen!");
+                }
+                Console.ReadKey();
+            } while (vizs);
         }
     }
 }

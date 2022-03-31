@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "idojaras", "idojaras\idojar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kivetelkezeles", "kivetelkezeles\kivetelkezeles.csproj", "{D22D74D4-C124-4EFC-BD3D-6397811F9864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vektorokkezeles", "vektorokkezeles\vektorokkezeles.csproj", "{288EB56C-33CC-446B-BD2F-06DB254F2DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorozatok", "Sorozatok\Sorozatok.csproj", "{EB58221F-913E-46A7-8CAC-7ADE35F7EF4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{D22D74D4-C124-4EFC-BD3D-6397811F9864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D22D74D4-C124-4EFC-BD3D-6397811F9864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D22D74D4-C124-4EFC-BD3D-6397811F9864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288EB56C-33CC-446B-BD2F-06DB254F2DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288EB56C-33CC-446B-BD2F-06DB254F2DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288EB56C-33CC-446B-BD2F-06DB254F2DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288EB56C-33CC-446B-BD2F-06DB254F2DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB58221F-913E-46A7-8CAC-7ADE35F7EF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB58221F-913E-46A7-8CAC-7ADE35F7EF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB58221F-913E-46A7-8CAC-7ADE35F7EF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB58221F-913E-46A7-8CAC-7ADE35F7EF4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
