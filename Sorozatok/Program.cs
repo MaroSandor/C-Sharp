@@ -27,15 +27,15 @@ namespace Sorozatok
 
         public void vizsgalat()
         {
-            if (d > c && c > b && b > a) // Ha növekvő sorrendben adja meg a sorozat elemeit
+            if (a / b == c / d || d / c == b / a) // Ha növekvő sorrendben adja meg a sorozat elemeit
+            {
+                diff = a / b;
+            } else if (d < c && c < b && b < a) // Ha csökkenő sorrendben adja meg a sorozat elemeit
             {
                 diff = b - a;
-            } else if (a < b && b < c && c < d) // Ha csökkenő sorrendben adja meg a sorozat elemeit
+            } else if (a < b && b < c && c < d)
             {
                 diff = a - b;
-            } else if ()
-            {
-                diff = 
             }
 
             if (a - b == diff && b - c == diff && c - d == diff)
@@ -44,6 +44,12 @@ namespace Sorozatok
             } else if (d - c == diff && c - b == diff && b - a == diff)
             {
                 Console.WriteLine("A sorozat számtani sorozat!");
+            } else if (a / b == diff && b / c == diff && c / d == diff)
+            {
+                Console.WriteLine("A sorozat mértani sorozat!");
+            } else if (d / c == diff && c / b == diff && b / a == diff)
+            {
+                Console.WriteLine("A sorozat mértani sorozat!");
             }
         }
     }
