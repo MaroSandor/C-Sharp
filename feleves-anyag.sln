@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kettes", "Kettes\Kettes.csproj", "{AD6AB41D-B566-45B6-ABE9-4AD3EE0EAA50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szamrendszer", "Szamrendszer\Szamrendszer.csproj", "{5C6D317D-2C73-4865-AE93-C46D83114F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{AD6AB41D-B566-45B6-ABE9-4AD3EE0EAA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD6AB41D-B566-45B6-ABE9-4AD3EE0EAA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD6AB41D-B566-45B6-ABE9-4AD3EE0EAA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6D317D-2C73-4865-AE93-C46D83114F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6D317D-2C73-4865-AE93-C46D83114F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6D317D-2C73-4865-AE93-C46D83114F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6D317D-2C73-4865-AE93-C46D83114F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
