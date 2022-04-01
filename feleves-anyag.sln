@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorozatok", "Sorozatok\Soro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binaris", "Binaris\Binaris.csproj", "{97A24B78-740C-48AD-81D2-A317EFBD051C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto", "Lotto\Lotto.csproj", "{EFA7B4A9-120C-470D-B0ED-758C752F984A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{97A24B78-740C-48AD-81D2-A317EFBD051C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A24B78-740C-48AD-81D2-A317EFBD051C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A24B78-740C-48AD-81D2-A317EFBD051C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA7B4A9-120C-470D-B0ED-758C752F984A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA7B4A9-120C-470D-B0ED-758C752F984A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA7B4A9-120C-470D-B0ED-758C752F984A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA7B4A9-120C-470D-B0ED-758C752F984A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
