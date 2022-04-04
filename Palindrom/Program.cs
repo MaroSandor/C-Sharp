@@ -21,26 +21,27 @@ namespace Palindrom
                 Console.WriteLine("Adja meg a vizsgálandó szót:");
                 szo = Console.ReadLine();
 
-                char[] megfordit = szo.ToCharArray();
+                Console.WriteLine("A beírt szó: {0} ", szo);
+
+                string fordit = szo.ToLower();
+                szo = String.Concat(fordit.Where(x => !Char.IsWhiteSpace(x)));
                 string tukorforditas = String.Empty;
 
-                for (int i = megfordit.Length - 1; i > -1; i--)
+                for (int i = szo.Length - 1; i > -1; i--)
                 {
-
-                    // Append each character to the reversedstring.
-                    tukorforditas += megfordit[i];
+                    tukorforditas += szo[i];
                 }
 
-                Console.WriteLine("A megadott szó: {0}", szo);
-                Console.WriteLine("A szó megfordítása: {0}", tukorforditas);
+                //Console.WriteLine("A megadott szó: {0}", szo);
+                //Console.WriteLine("A szó megfordítása: {0}", tukorforditas);
 
                 if (szo == tukorforditas)
                 {
-                    Console.WriteLine("A szó palindrom típusú.");
+                    Console.WriteLine("Palindrom típusú.");
                 }
                 else
                 {
-                    Console.WriteLine("A szó nem palindrom típusú.");
+                    Console.WriteLine("Nem palindrom típusú.");
                 }
 
                 Console.WriteLine("Szeretnél még valamit megvizsgálni?");
