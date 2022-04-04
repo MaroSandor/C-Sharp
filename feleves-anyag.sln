@@ -87,6 +87,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom", "Palindrom\Pali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tukor", "Tukor\Tukor.csproj", "{DFAA80D2-02F1-48FB-85E9-890CB3D20661}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nullak", "Nullak\Nullak.csproj", "{C4052A9C-A504-4CE6-9A73-19DAEC6E4970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{67AB3A1B-D9D5-4789-86E8-028B3CE8F2F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +265,14 @@ Global
 		{DFAA80D2-02F1-48FB-85E9-890CB3D20661}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFAA80D2-02F1-48FB-85E9-890CB3D20661}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFAA80D2-02F1-48FB-85E9-890CB3D20661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4052A9C-A504-4CE6-9A73-19DAEC6E4970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4052A9C-A504-4CE6-9A73-19DAEC6E4970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4052A9C-A504-4CE6-9A73-19DAEC6E4970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4052A9C-A504-4CE6-9A73-19DAEC6E4970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AB3A1B-D9D5-4789-86E8-028B3CE8F2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AB3A1B-D9D5-4789-86E8-028B3CE8F2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AB3A1B-D9D5-4789-86E8-028B3CE8F2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AB3A1B-D9D5-4789-86E8-028B3CE8F2F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
