@@ -32,9 +32,6 @@ namespace Palindrom
                     tukorforditas += szo[i];
                 }
 
-                //Console.WriteLine("A megadott szó: {0}", szo);
-                //Console.WriteLine("A szó megfordítása: {0}", tukorforditas);
-
                 if (szo == tukorforditas)
                 {
                     Console.WriteLine("Palindrom típusú.");
