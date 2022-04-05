@@ -8,8 +8,7 @@ namespace vezersakk
 {
     class Sakk
     {
-        private int[] xtengely = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
-        private int[] ytengely = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
+        private int[,] tabla = new int[,] {1 - a, 2 - b, 3 - c, 4 - d, 5 - e, 6 - f, 7 - g, 8 - h};
         private int pos_a,
             pos_b;
 
@@ -17,16 +16,7 @@ namespace vezersakk
 
         public void elhelyezes()
         {
-            for (int i = 0; i < xtengely.Length; i++)
-            {
-                for (int j = 0; j < ytengely.Length; j++)
-                {
-                    if (i == 0 && j == 0)
-                    {
-
-                    }
-                }
-            }
+            
         }
     }
 
