@@ -8,27 +8,31 @@ namespace Fibonacci
 {
     class Fibonacci
     {
-        private int generalando,
-            szam;
-        private List<ulong> fibonacci = new List<ulong> ();
+        public Fibonacci() { }
 
-        public Fibonacci()
-        {
-            this.szam = generalando;
-        }
+        private int szam,
+            a = 0,
+            b = 1;
+        private int[] fibonacciszamok;
 
-        public void bekeres()
+        public void feltoltes()
         {
-            Console.WriteLine("Adja meg, hogy hány Fibonacci számot szeretne kiírni:");
-            generalando = Convert.ToInt32(Console.ReadLine());
-        }
+            Console.Write("Kérem adja meg, hogy hány számot szeretne kiíratni: ");
+            szam = Convert.ToInt32(Console.ReadLine());
 
-        public void sorozat()
-        {
-            ulong kezdo = 0;
-            for (int i = 0; i < this.szam; i++)
+            fibonacciszamok = new int[szam];
+
+            Console.WriteLine("A Fibonacci-sorozat számai {0}-ig:", szam);
+            Console.Write("{0} {1} ", a, b);
+
+            for (int i = 1; i < szam; i++)
             {
-                fibonacci.Add();
+                fibonacciszamok[i] += fibonacciszamok[i - 1] + fibonacciszamok[i];
+            }
+
+            foreach (var item in fibonacciszamok)
+            {
+                Console.WriteLine(item);
             }
         }
     }
@@ -37,8 +41,7 @@ namespace Fibonacci
         static void Main(string[] args)
         {
             Fibonacci osztaly = new Fibonacci();
-            osztaly.bekeres();
-            osztaly.sorozat();
+            osztaly.feltoltes();
             Console.ReadKey();
         }
     }
