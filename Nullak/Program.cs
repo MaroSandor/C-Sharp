@@ -9,7 +9,8 @@ namespace Nullak
     class Nullak
     {
         private int db_szam,
-            nullak = 0;
+            nullak = 0,
+            nullak1 = 0;
         private int[] leghosszabb = new int[] { };
         Random szamok = new Random();
 
