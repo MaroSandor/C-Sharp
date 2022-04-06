@@ -8,7 +8,9 @@ namespace Nullak
 {
     class Nullak
     {
-        private int db_szam = 0;
+        private int db_szam,
+            nullak = 0;
+        private int[] leghosszabb = new int[] { };
         Random szamok = new Random();
 
         public Nullak() { }
@@ -24,13 +26,24 @@ namespace Nullak
 
             for (int i = 0; i < db_szam; i++)
             {
-                int a = szamok.Next(100000, 999999);
-                Console.WriteLine("{0}", Convert.ToString(a));
+                int a = szamok.Next(1000000, 9999999);
 
-                for (int j = 0; j < i; j++)
+                string szam = Convert.ToString(a);
+
+                Console.WriteLine("{0}", a);
+
+                for (int j = 0; j < szam.Length - 1; j++)
                 {
-
+                    if (szam[j] == '0')
+                    {
+                        nullak++;
+                    }                    
                 }
+                Console.WriteLine("A nullák száma: {0}", nullak);
+
+                leghosszabb[i] = nullak;
+
+                nullak = 0;
             }
         }
     }
