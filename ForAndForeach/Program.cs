@@ -28,7 +28,7 @@ namespace ForAndForeach
             {
                 tomb[i] = rnd.Next(100);
 
-                Console.Write("{0}", tomb[i]);
+                Console.Write("{0} ", tomb[i]);
             }
         }
 
