@@ -32,6 +32,12 @@ namespace MatrixBill
                 {
                     tomb[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
+
+                for (int d = 0; d < tomb.GetLength(1); d++)
+                {
+                    Console.Write(tomb[i, d] + " ");
+                }
+                Console.WriteLine();
             }
         }
 
@@ -43,7 +49,7 @@ namespace MatrixBill
                 {
                     Console.Write("{0, 4} ", tomb[i, j]);
                 }
-                Console.WriteLine();
+            Console.WriteLine();
             }
         }
     }
