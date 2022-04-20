@@ -9,8 +9,13 @@ namespace Matrix4
     class Matrix
     {
         private int sor,
-            oszlop;
+            oszlop,
+            sorindex,
+            oszlopindex,
+            szam;
         private int[,] tomb;
+        private string beolvasas;
+        private string[] beolvasott;
 
         public Matrix() { }
 
@@ -21,19 +26,17 @@ namespace Matrix4
             Console.WriteLine("Adja meg a mátrix oszlopainak számát:");
             oszlop = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Adja meg az elemeket így: szám, sor index, oszlop index");
+            Console.WriteLine("Adja meg az elemeket így: sor index, oszlop index, szám");
 
-            tomb = new int[sor, oszlop];
+            beolvasas = Console.ReadLine();
 
+            string[] beolvasott = beolvasas.Split(',');
 
-
-            //for (int i = 0; i < tomb.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < tomb.GetLength(1); j++)
-            //    {
-            //        tomb[i, j] = Convert.ToInt32(Console.ReadLine());
-            //    }
-            //}
+            sorindex = Convert.ToInt32(beolvasott[0].ToString()) - 1;
+            oszlopindex = Convert.ToInt32(beolvasott[1].ToString()) - 1;
+            szam = Convert.ToInt32(beolvasott[2]);
+             
+            tomb[sorindex, oszlopindex] = szam;
         }
 
         public void kiiratas()
