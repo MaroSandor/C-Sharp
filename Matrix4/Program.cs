@@ -14,6 +14,7 @@ namespace Matrix4
             oszlopindex,
             szam;
         private int[,] tomb;
+        private bool[,] vizsgal;
         private string beolvasas;
         private string[] beolvasott;
 
@@ -26,17 +27,25 @@ namespace Matrix4
             Console.WriteLine("Adja meg a mátrix oszlopainak számát:");
             oszlop = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Adja meg az elemeket így: sor index, oszlop index, szám");
+            tomb = new int[sor, oszlop];
 
-            beolvasas = Console.ReadLine();
+            do
+            {
+                Console.WriteLine("Adja meg az elemeket így: sor index, oszlop index, szám");
 
-            string[] beolvasott = beolvasas.Split(',');
+                beolvasas = Console.ReadLine();
 
-            sorindex = Convert.ToInt32(beolvasott[0].ToString()) - 1;
-            oszlopindex = Convert.ToInt32(beolvasott[1].ToString()) - 1;
-            szam = Convert.ToInt32(beolvasott[2]);
-             
-            tomb[sorindex, oszlopindex] = szam;
+                if (beolvasas == "")
+                {
+                    Console.WriteLine("A hely nem lehet üres!");
+                } else {
+                string[] beolvasott = beolvasas.Split(',');
+
+                sorindex = Convert.ToInt32(beolvasott[0].ToString()) - 1;
+                oszlopindex = Convert.ToInt32(beolvasott[1].ToString()) - 1;
+                szam = Convert.ToInt32(beolvasott[2]);
+                }
+            } while (beolvasas != "");
         }
 
         public void kiiratas()
