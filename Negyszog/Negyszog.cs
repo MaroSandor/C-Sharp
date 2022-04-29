@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Negyszog
 {
-    public class Negyszog
+    public class Nszog
     {
         // Tagváltozó
         public double Side { get; set; }
+        public double oszlop { get; set; }
 
         // Konstruktor
-        public Negyszog(double side)
+        public Nszog(double side)
         {
             this.Side = side;
         }
@@ -33,6 +34,17 @@ namespace Negyszog
         public double Atlo()
         {
             return Math.Sqrt(2 * Math.Pow(this.Side, 2));
+        }
+
+        // Oszlop méretének beolvasása
+        public void setOszlop(double magas)
+        {
+            // Az oszlop nem lehet negatív
+            if (magas <= 0)
+            {
+                throw new ArgumentException("A magasság nem lehet 0 vagy negatív.");
+            }
+            else this.oszlop = magas;
         }
     }
 }
