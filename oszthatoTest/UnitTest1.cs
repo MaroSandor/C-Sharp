@@ -18,7 +18,7 @@ namespace oszthatoTest
             string varteredmeny = "három";
 
             // Act
-            string kapotteredmeny = osztaly.getSzam();
+            string kapotteredmeny = osztaly.getSzam3();
 
             // Assert
             Assert.AreEqual(varteredmeny, kapotteredmeny);
@@ -31,7 +31,7 @@ namespace oszthatoTest
             string varteredmeny = "öt";
 
             // Act
-            string kapotteredmeny = osztaly.getSzam();
+            string kapotteredmeny = osztaly.getSzam5();
 
             // Assert
             Assert.AreEqual(varteredmeny, kapotteredmeny);
