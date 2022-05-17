@@ -7,28 +7,31 @@ using System.Threading.Tasks;
 
 namespace Kettes
 {
-    class Kettes
+    public class Ketteske
     {
         private int bekertszam;
         private string atvaltott;
 
-        public Kettes() { }
+        public Ketteske()
+        {
+            this.bekertszam = bekertszam;
+        }
 
-        public void atvalto()
+        public string atvalto(int bekertszam)
         {
             Console.WriteLine("Adja meg az átváltandó tízes számrendszerbeli számot:");
-            bekertszam = Convert.ToInt32(Console.ReadLine());
             atvaltott = Convert.ToString(bekertszam, 2);
-            Console.WriteLine("A kettes számrendszerbeli szám:");
-            Console.Write(atvaltott);
+            Console.WriteLine("A kettes számrendszerbeli szám: {0}", atvaltott);
+
+            return this.atvaltott;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Kettes a = new Kettes();
-            a.atvalto();
+            Ketteske a = new Ketteske();
+            a.atvalto(Convert.ToInt32(Console.ReadLine()));
             Console.ReadKey();
         }
     }
