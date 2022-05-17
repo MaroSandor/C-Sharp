@@ -1,23 +1,22 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.IO;
 using Henger;
 
-namespace HengerTeszt
+namespace TesztHenger
 {
     [TestClass]
-    public class hengerTeszt
+    public class UnitTest1
     {
-            static double a = 3.0,
-                b = 2.0;
+            static double magassag = 3.0,
+                sugar = 2.0;
 
-            Hengera henger = new Hengera(a, b);
+            Hengera henger = new Hengera(magassag, sugar);
 
             [TestMethod]
             public void TestKerulet()
             {
                 // Arrange
-                double varteredmeny = 12.57;
+                double varteredmeny = 2 * sugar * Math.PI;
 
                 // Act
                 double kapotteredmeny = henger.Kerulet();
@@ -30,7 +29,7 @@ namespace HengerTeszt
             public void TestTerulet()
             {
                 // Arrange
-                double varteredmeny = 12.57;
+                double varteredmeny = Math.Pow(sugar, 2) * Math.PI;
 
                 // Act
                 double kapotteredmeny = henger.Terulet();
@@ -43,7 +42,7 @@ namespace HengerTeszt
             public void TestFelszin()
             {
                 // Arrange
-                double varteredmeny = 62.83;
+                double varteredmeny = 2 * (Math.Pow(sugar, 2) * Math.PI) + (2 * sugar * Math.PI) * magassag;
 
                 // Act
                 double kapotteredmeny = henger.Felszin();
@@ -56,7 +55,7 @@ namespace HengerTeszt
             public void TestTerfogat()
             {
                 // Arrange
-                double varteredmeny = 37.70;
+                double varteredmeny = (Math.Pow(sugar, 2) * Math.PI) * magassag;
 
                 // Act
                 double kapotteredmeny = henger.Terfogat();
