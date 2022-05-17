@@ -7,26 +7,28 @@ using System.Threading.Tasks;
 
 namespace Binaris
 {
-    class Binaris
+    public class Binarisok
     {
-        public Binaris() { }
+        public string szam;
+        public int egyes = 0;
 
-        public void szamolas()
+        public Binarisok(string szam)
         {
-            string szam;
-            int egyes = 0;
-            
-            Console.WriteLine("Kérem adjon meg egy bináris számot:");
-            szam = Console.ReadLine();
+            this.szam = szam;
+        }
 
-            for (int i = 0; i < szam.Length; i++)
+        public int szamolas()
+        {
+            for (int i = 0; i < this.szam.Length; i++)
             {
-                if (szam[i] == '1')
+                if (this.szam[i] == '1')
                 {
                     egyes++;
                 }
             }
             Console.WriteLine("Az egyesek száma: {0}", egyes);
+
+            return egyes;
         }
     }
 
@@ -34,8 +36,9 @@ namespace Binaris
     {
         static void Main(string[] args)
         {
-            Binaris a = new Binaris();
-            a.szamolas();
+            Console.WriteLine("Kérem adjon meg egy bináris számot:");
+            Binarisok osztaly = new Binarisok(Console.ReadLine());
+            osztaly.szamolas();
             Console.ReadKey();
         }
     }
