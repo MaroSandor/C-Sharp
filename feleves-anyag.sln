@@ -135,6 +135,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "friendsData", "friendsData\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoList", "AutoList\AutoList.csproj", "{2B7711EC-6249-4B4F-ACD7-653999887547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.2 feladat", "18.2 feladat\18.2 feladat.csproj", "{4D631678-8FCF-4ED2-AAA2-0C1B6CE73D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAR18.2", "KAR18.2\KAR18.2.csproj", "{558FCDCB-C36C-4C7F-9776-3DFAD271EB83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +409,14 @@ Global
 		{2B7711EC-6249-4B4F-ACD7-653999887547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B7711EC-6249-4B4F-ACD7-653999887547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B7711EC-6249-4B4F-ACD7-653999887547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D631678-8FCF-4ED2-AAA2-0C1B6CE73D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D631678-8FCF-4ED2-AAA2-0C1B6CE73D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D631678-8FCF-4ED2-AAA2-0C1B6CE73D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D631678-8FCF-4ED2-AAA2-0C1B6CE73D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558FCDCB-C36C-4C7F-9776-3DFAD271EB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558FCDCB-C36C-4C7F-9776-3DFAD271EB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558FCDCB-C36C-4C7F-9776-3DFAD271EB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558FCDCB-C36C-4C7F-9776-3DFAD271EB83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
