@@ -10,6 +10,9 @@ namespace AutoList
     {
         static void Main(string[] args)
         {
+            AutokLista a = new AutokLista();
+            a.Beolvas();
+            a.Kiir();
         }
     }
 }

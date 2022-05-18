@@ -30,7 +30,7 @@ namespace AutoList
 
             public void printAutok()
             {
-                Console.WriteLine("{0,-20} {1,10} {2,1} {3} {4}", rendszam, muszakivizsga.ToShortDateString(), gyartmany, tipus, gyartasiev, tulajnev);
+                Console.WriteLine("{0,-20} {1,10} {2,1} {3} {4} {5}", rendszam, muszakivizsga.ToShortDateString(), gyartmany, tipus, gyartasiev, tulajnev);
             }
         }
 
