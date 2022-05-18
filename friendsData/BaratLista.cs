@@ -18,7 +18,7 @@ namespace friendsData
 
             public Barat() { }
 
-            public Barat(string nev, char nem, DateTime szuletett, int bulhajlam)
+            public Barat(string nev, DateTime szuletett, char nem, int bulhajlam)
             {
                 this.nev = nev;
                 this.nem = nem;
@@ -50,7 +50,7 @@ namespace friendsData
             fajlNev = Console.ReadLine();
 
             // Ha hiányzik a .txt kiterjesztés, kiegészítjük
-            if (fajlNev.EndsWith(".txt")) fajlNev += ".txt";
+            if (fajlNev.EndsWith("")) fajlNev += ".txt";
 
             // Beolvasás fájlból
             using (StreamReader sr = new StreamReader(fajlNev, Encoding.Default))
@@ -64,8 +64,8 @@ namespace friendsData
                     // Hozzáadás a listához
                     baratLista.Add(new Barat (
                         mezok[0],
-                        char.Parse(mezok[1]),
-                        DateTime.Parse(mezok[2]),
+                        DateTime.Parse(mezok[1]),
+                        char.Parse(mezok[2]),
                         int.Parse(mezok[3])));
                 }
         }
