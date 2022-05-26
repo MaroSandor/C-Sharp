@@ -41,13 +41,14 @@ namespace LabelSzoveg
             this.lblFull.Size = new System.Drawing.Size(35, 13);
             this.lblFull.TabIndex = 0;
             this.lblFull.Text = "label1";
-            this.lblFull.Click += new System.EventHandler(this.label1_Click);
+            this.lblFull.Click += new System.EventHandler(this.lblFullClick_Click);
+            this.lblFull.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lblFull_MouseClick);
             // 
             // LabelSzoveg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(936, 488);
             this.Controls.Add(this.lblFull);
             this.Name = "LabelSzoveg";
             this.Text = "LabelSzoveg";

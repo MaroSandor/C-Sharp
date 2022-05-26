@@ -19,12 +19,18 @@ namespace LabelSzoveg
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            lblFull.Text = "Kattints a képernyőn valahova.";
+        }
+
+        private void lblFullClick_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lblFull_MouseClick(object sender, MouseEventArgs e)
         {
-
+            int o = (int)e.X / (lblFull.Width / 3); // oszlop
+            int s = (int)e.Y / (lblFull.Height / 3); // sor
         }
     }
 }
