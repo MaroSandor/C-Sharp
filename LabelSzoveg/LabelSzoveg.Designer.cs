@@ -34,11 +34,10 @@ namespace LabelSzoveg
             // 
             // lblFull
             // 
-            this.lblFull.AutoSize = true;
             this.lblFull.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblFull.Location = new System.Drawing.Point(0, 0);
             this.lblFull.Name = "lblFull";
-            this.lblFull.Size = new System.Drawing.Size(35, 13);
+            this.lblFull.Size = new System.Drawing.Size(936, 488);
             this.lblFull.TabIndex = 0;
             this.lblFull.Text = "label1";
             this.lblFull.Click += new System.EventHandler(this.lblFullClick_Click);
@@ -54,7 +53,6 @@ namespace LabelSzoveg
             this.Text = "LabelSzoveg";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
