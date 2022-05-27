@@ -157,6 +157,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorUtTeszt", "Kalkul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMaxUt", "MinMaxUt\MinMaxUt.csproj", "{99D40BED-014D-41DF-A571-9D226485BE43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzigetekUt", "SzigetekUt\SzigetekUt.csproj", "{3ED3A4AA-8554-408B-A49F-36455794F5D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -471,6 +473,10 @@ Global
 		{99D40BED-014D-41DF-A571-9D226485BE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99D40BED-014D-41DF-A571-9D226485BE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99D40BED-014D-41DF-A571-9D226485BE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
