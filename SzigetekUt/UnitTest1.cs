@@ -26,7 +26,7 @@ namespace SzigetekUt
 
             int kapotteredmeny = osztaly.szigetszam("11101011101011100011110000100111");
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace SzigetekUt
 
             int kapotteredmeny = osztaly.szigethossz("11101011101011100011110000100111");
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
     }
 }
