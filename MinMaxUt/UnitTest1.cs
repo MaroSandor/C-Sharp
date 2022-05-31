@@ -26,7 +26,7 @@ namespace MinMaxUt
 
             int kapotteredmeny = minmax.minValasztoNONRND();
 
-            Assert.AreEqual(varteredmeny, kapotteredmeny);
+            Assert.AreNotEqual(varteredmeny, kapotteredmeny);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace MinMaxUt
 
             int kapotteredmeny = minmax.maxValasztoNONRND();
 
-            Assert.AreEqual(varteredmeny, kapotteredmeny);
+            Assert.AreNotEqual(varteredmeny, kapotteredmeny);
         }
     }
 }
