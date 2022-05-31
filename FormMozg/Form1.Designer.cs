@@ -39,9 +39,9 @@ namespace FormMozg
             this.meretCsokk = new System.Windows.Forms.Button();
             this.meretNo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.atlNo = new System.Windows.Forms.Button();
             this.atlCsokk = new System.Windows.Forms.Button();
+            this.atlNo = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.balSzel = new System.Windows.Forms.Button();
             this.lent = new System.Windows.Forms.Button();
             this.fent = new System.Windows.Forms.Button();
@@ -147,6 +147,29 @@ namespace FormMozg
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Átlátszóság:";
             // 
+            // atlCsokk
+            // 
+            this.atlCsokk.BackColor = System.Drawing.Color.OrangeRed;
+            this.atlCsokk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.atlCsokk.Location = new System.Drawing.Point(119, 48);
+            this.atlCsokk.Name = "atlCsokk";
+            this.atlCsokk.Size = new System.Drawing.Size(75, 23);
+            this.atlCsokk.TabIndex = 11;
+            this.atlCsokk.Text = "Csökken";
+            this.atlCsokk.UseVisualStyleBackColor = false;
+            // 
+            // atlNo
+            // 
+            this.atlNo.BackColor = System.Drawing.Color.Gold;
+            this.atlNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.atlNo.Location = new System.Drawing.Point(38, 48);
+            this.atlNo.Name = "atlNo";
+            this.atlNo.Size = new System.Drawing.Size(75, 23);
+            this.atlNo.TabIndex = 11;
+            this.atlNo.Text = "Növekszik";
+            this.atlNo.UseVisualStyleBackColor = false;
+            this.atlNo.Click += new System.EventHandler(this.atlNo_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Red;
@@ -160,28 +183,6 @@ namespace FormMozg
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Méret:";
             this.groupBox2.UseWaitCursor = true;
-            // 
-            // atlNo
-            // 
-            this.atlNo.BackColor = System.Drawing.Color.Gold;
-            this.atlNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.atlNo.Location = new System.Drawing.Point(38, 48);
-            this.atlNo.Name = "atlNo";
-            this.atlNo.Size = new System.Drawing.Size(75, 23);
-            this.atlNo.TabIndex = 11;
-            this.atlNo.Text = "Növekszik";
-            this.atlNo.UseVisualStyleBackColor = false;
-            // 
-            // atlCsokk
-            // 
-            this.atlCsokk.BackColor = System.Drawing.Color.OrangeRed;
-            this.atlCsokk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.atlCsokk.Location = new System.Drawing.Point(119, 48);
-            this.atlCsokk.Name = "atlCsokk";
-            this.atlCsokk.Size = new System.Drawing.Size(75, 23);
-            this.atlCsokk.TabIndex = 11;
-            this.atlCsokk.Text = "Csökken";
-            this.atlCsokk.UseVisualStyleBackColor = false;
             // 
             // balSzel
             // 

@@ -159,7 +159,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMaxUt", "MinMaxUt\MinMax
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzigetekUt", "SzigetekUt\SzigetekUt.csproj", "{3ED3A4AA-8554-408B-A49F-36455794F5D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormMozg", "FormMozg\FormMozg.csproj", "{453668DD-2B3A-4F75-9FAE-5FA64114A1A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormMozgatas", "FormMozgatas\FormMozgatas.csproj", "{CA96572F-25FE-4E7E-BD84-44D34423CB5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -479,10 +479,10 @@ Global
 		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ED3A4AA-8554-408B-A49F-36455794F5D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{453668DD-2B3A-4F75-9FAE-5FA64114A1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{453668DD-2B3A-4F75-9FAE-5FA64114A1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{453668DD-2B3A-4F75-9FAE-5FA64114A1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{453668DD-2B3A-4F75-9FAE-5FA64114A1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA96572F-25FE-4E7E-BD84-44D34423CB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA96572F-25FE-4E7E-BD84-44D34423CB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA96572F-25FE-4E7E-BD84-44D34423CB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA96572F-25FE-4E7E-BD84-44D34423CB5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

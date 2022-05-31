@@ -26,5 +26,13 @@ namespace FormMozg
         {
 
         }
+
+        private void atlNo_Click(object sender, EventArgs e)
+        {
+            if (Opacity >= 0.1)
+            {
+                Opacity -= 1;
+            }
+        }
     }
 }
