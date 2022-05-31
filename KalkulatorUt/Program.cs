@@ -14,7 +14,7 @@ namespace KalkulatorUt
 
         public Calculator() { }
 
-        public int szamitas(int szam1, int szam2, char muvelet)
+        public static int szamitas(int szam1, int szam2, char muvelet)
         {
             int ertek = 0;
 
@@ -32,13 +32,13 @@ namespace KalkulatorUt
                 case '/':
                     if (szam2 == 0)
                     {
-                        ertek = szam1 / szam2;
-                        return ertek;
+                        Console.WriteLine("0-val való osztás nem lehetséges!");
+                        ertek = 0;
                     } else
                     {
                         ertek = szam1 / szam2;
-                        break;
                     }
+                    break;
             }
 
             return ertek;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using KalkulatorUt;
+using System.IO;
 
 namespace KalkulatorUtTeszt
 {
@@ -14,9 +15,9 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 5;
 
-            int kapotteredmeny = osztaly.szamitas(15, 5, '+');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(15, 5, '+');
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
 
         [TestMethod]
@@ -24,7 +25,7 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 20;
 
-            int kapotteredmeny = osztaly.szamitas(15, 5, '+');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(15, 5, '+');
 
             Assert.AreEqual(kapotteredmeny, varteredmeny);
         }
@@ -34,9 +35,9 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 10;
 
-            int kapotteredmeny = osztaly.szamitas(5, 5, '-');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(5, 5, '-');
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
 
         [TestMethod]
@@ -44,7 +45,7 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 10;
 
-            int kapotteredmeny = osztaly.szamitas(15, 5, '-');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(15, 5, '-');
 
             Assert.AreEqual(varteredmeny, kapotteredmeny);
         }
@@ -54,9 +55,9 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 15;
 
-            int kapotteredmeny = osztaly.szamitas(2, 5, '*');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(2, 5, '*');
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
 
         [TestMethod]
@@ -64,7 +65,7 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 10;
 
-            int kapotteredmeny = osztaly.szamitas(2, 5, '*');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(2, 5, '*');
 
             Assert.AreEqual(kapotteredmeny, varteredmeny);
         }
@@ -74,9 +75,9 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 3;
 
-            int kapotteredmeny = osztaly.szamitas(10, 5, '/');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(10, 5, '/');
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
 
         [TestMethod]
@@ -84,7 +85,7 @@ namespace KalkulatorUtTeszt
         {
             int varteredmeny = 2;
 
-            int kapotteredmeny = osztaly.szamitas(10, 5, '/');
+            int kapotteredmeny = KalkulatorUt.Calculator.szamitas(10, 5, '/');
 
             Assert.AreEqual(kapotteredmeny, varteredmeny);
         }
@@ -94,9 +95,18 @@ namespace KalkulatorUtTeszt
         {
             string varteredmeny = "0-val való osztás értelmetlen";
 
-            int kapotteredmeny = osztaly.szamitas(10, 0, '/');
+            string kapotteredmeny;
 
-            Assert.AreEqual(kapotteredmeny, varteredmeny);
+            using (var szoveg = new StringWriter())
+            {
+                Console.SetOut(szoveg);
+
+                KalkulatorUt.Calculator.szamitas(10, 0, '/');
+
+                kapotteredmeny = szoveg.ToString().Trim();
+            }
+
+            Assert.AreNotEqual(kapotteredmeny, varteredmeny);
         }
     }
 }
