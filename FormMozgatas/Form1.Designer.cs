@@ -50,6 +50,7 @@ namespace FormMozgatas
             // 
             // middle
             // 
+            this.middle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.middle.Location = new System.Drawing.Point(340, 198);
             this.middle.Name = "middle";
             this.middle.Size = new System.Drawing.Size(100, 42);
@@ -60,6 +61,7 @@ namespace FormMozgatas
             // 
             // down
             // 
+            this.down.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.down.Location = new System.Drawing.Point(340, 246);
             this.down.Name = "down";
             this.down.Size = new System.Drawing.Size(100, 42);
@@ -70,6 +72,7 @@ namespace FormMozgatas
             // 
             // left
             // 
+            this.left.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.left.Location = new System.Drawing.Point(234, 198);
             this.left.Name = "left";
             this.left.Size = new System.Drawing.Size(100, 42);
@@ -80,15 +83,18 @@ namespace FormMozgatas
             // 
             // right
             // 
+            this.right.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.right.Location = new System.Drawing.Point(446, 198);
             this.right.Name = "right";
             this.right.Size = new System.Drawing.Size(100, 42);
             this.right.TabIndex = 3;
             this.right.Text = "Jobbra";
             this.right.UseVisualStyleBackColor = true;
+            this.right.Click += new System.EventHandler(this.right_Click);
             // 
             // up
             // 
+            this.up.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.up.Location = new System.Drawing.Point(340, 150);
             this.up.Name = "up";
             this.up.Size = new System.Drawing.Size(100, 42);
@@ -99,6 +105,7 @@ namespace FormMozgatas
             // 
             // upSide
             // 
+            this.upSide.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.upSide.Location = new System.Drawing.Point(340, 102);
             this.upSide.Name = "upSide";
             this.upSide.Size = new System.Drawing.Size(100, 42);
@@ -109,15 +116,18 @@ namespace FormMozgatas
             // 
             // downSide
             // 
+            this.downSide.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.downSide.Location = new System.Drawing.Point(340, 294);
             this.downSide.Name = "downSide";
             this.downSide.Size = new System.Drawing.Size(100, 42);
             this.downSide.TabIndex = 6;
             this.downSide.Text = "Lent";
             this.downSide.UseVisualStyleBackColor = true;
+            this.downSide.Click += new System.EventHandler(this.downSide_Click);
             // 
             // leftSide
             // 
+            this.leftSide.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftSide.Location = new System.Drawing.Point(128, 198);
             this.leftSide.Name = "leftSide";
             this.leftSide.Size = new System.Drawing.Size(100, 42);
@@ -128,24 +138,29 @@ namespace FormMozgatas
             // 
             // rightSide
             // 
+            this.rightSide.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rightSide.Location = new System.Drawing.Point(552, 198);
             this.rightSide.Name = "rightSide";
             this.rightSide.Size = new System.Drawing.Size(100, 42);
             this.rightSide.TabIndex = 8;
             this.rightSide.Text = "Jobb szél";
             this.rightSide.UseVisualStyleBackColor = true;
+            this.rightSide.Click += new System.EventHandler(this.rightSide_Click);
             // 
             // meretCsok
             // 
+            this.meretCsok.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.meretCsok.Location = new System.Drawing.Point(112, 19);
             this.meretCsok.Name = "meretCsok";
             this.meretCsok.Size = new System.Drawing.Size(100, 42);
             this.meretCsok.TabIndex = 9;
             this.meretCsok.Text = "Csökken";
             this.meretCsok.UseVisualStyleBackColor = true;
+            this.meretCsok.Click += new System.EventHandler(this.meretCsok_Click);
             // 
             // meretNo
             // 
+            this.meretNo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.meretNo.Location = new System.Drawing.Point(6, 19);
             this.meretNo.Name = "meretNo";
             this.meretNo.Size = new System.Drawing.Size(100, 42);
@@ -156,6 +171,7 @@ namespace FormMozgatas
             // 
             // meret
             // 
+            this.meret.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.meret.Controls.Add(this.meretNo);
             this.meret.Controls.Add(this.meretCsok);
             this.meret.Location = new System.Drawing.Point(284, 24);
@@ -164,9 +180,11 @@ namespace FormMozgatas
             this.meret.TabIndex = 13;
             this.meret.TabStop = false;
             this.meret.Text = "Méret:";
+            this.meret.Enter += new System.EventHandler(this.meret_Enter);
             // 
             // atlatszosag
             // 
+            this.atlatszosag.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.atlatszosag.Controls.Add(this.atlNo);
             this.atlatszosag.Controls.Add(this.atlCsok);
             this.atlatszosag.Location = new System.Drawing.Point(284, 342);
@@ -175,24 +193,29 @@ namespace FormMozgatas
             this.atlatszosag.TabIndex = 14;
             this.atlatszosag.TabStop = false;
             this.atlatszosag.Text = "Átlátszóság:";
+            this.atlatszosag.Enter += new System.EventHandler(this.atlatszosag_Enter);
             // 
             // atlNo
             // 
+            this.atlNo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.atlNo.Location = new System.Drawing.Point(6, 19);
             this.atlNo.Name = "atlNo";
             this.atlNo.Size = new System.Drawing.Size(100, 42);
             this.atlNo.TabIndex = 10;
             this.atlNo.Text = "Növekszik";
             this.atlNo.UseVisualStyleBackColor = true;
+            this.atlNo.Click += new System.EventHandler(this.atlNo_Click);
             // 
             // atlCsok
             // 
+            this.atlCsok.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.atlCsok.Location = new System.Drawing.Point(112, 19);
             this.atlCsok.Name = "atlCsok";
             this.atlCsok.Size = new System.Drawing.Size(100, 42);
             this.atlCsok.TabIndex = 9;
             this.atlCsok.Text = "Csökken";
             this.atlCsok.UseVisualStyleBackColor = true;
+            this.atlCsok.Click += new System.EventHandler(this.atlCsok_Click);
             // 
             // Form1
             // 
@@ -212,6 +235,7 @@ namespace FormMozgatas
             this.Controls.Add(this.middle);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.meret.ResumeLayout(false);
             this.atlatszosag.ResumeLayout(false);
             this.ResumeLayout(false);

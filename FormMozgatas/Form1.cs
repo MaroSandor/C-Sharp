@@ -32,7 +32,7 @@ namespace FormMozgatas
 
         private void down_Click(object sender, EventArgs e)
         {
-            if (Top > Screen.PrimaryScreen.Bounds.Height - Height)
+            if (Top < Screen.PrimaryScreen.Bounds.Height - Height)
             {
                 Top += 10;
             }
@@ -60,6 +60,58 @@ namespace FormMozgatas
         {
             Height += 10;
             Width += 10;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downSide_Click(object sender, EventArgs e)
+        {
+            Top = Screen.PrimaryScreen.Bounds.Height - Height;
+        }
+
+        private void right_Click(object sender, EventArgs e)
+        {
+            if (Left < Screen.PrimaryScreen.Bounds.Width - Width)
+            {
+                Left += 10;
+            }
+        }
+
+        private void rightSide_Click(object sender, EventArgs e)
+        {
+            Left = Screen.PrimaryScreen.Bounds.Width - Width;
+        }
+
+        private void meretCsok_Click(object sender, EventArgs e)
+        {
+            Height -= 10;
+            Width -= 10;
+        }
+
+        private void meret_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void atlatszosag_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void atlNo_Click(object sender, EventArgs e)
+        {
+            Opacity += 0.1;
+        }
+
+        private void atlCsok_Click(object sender, EventArgs e)
+        {
+            if (Opacity > 0.2)
+            {
+                Opacity -= 0.1;
+            }
         }
     }
 }
