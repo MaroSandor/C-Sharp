@@ -163,6 +163,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormMozgatas", "FormMozgata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBar", "ScrollBar\ScrollBar.csproj", "{57DEBE83-1342-4BDD-95AC-C8470B5B14AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kepforog", "Kepforog\Kepforog.csproj", "{4EECC912-2148-4E74-8429-54AC5F990128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -489,6 +491,10 @@ Global
 		{57DEBE83-1342-4BDD-95AC-C8470B5B14AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57DEBE83-1342-4BDD-95AC-C8470B5B14AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57DEBE83-1342-4BDD-95AC-C8470B5B14AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EECC912-2148-4E74-8429-54AC5F990128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EECC912-2148-4E74-8429-54AC5F990128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EECC912-2148-4E74-8429-54AC5F990128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EECC912-2148-4E74-8429-54AC5F990128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
