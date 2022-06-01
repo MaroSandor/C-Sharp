@@ -165,6 +165,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBar", "ScrollBar\Scro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kepforog", "Kepforog\Kepforog.csproj", "{4EECC912-2148-4E74-8429-54AC5F990128}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalmazMuv", "halamzmuv\HalmazMuv.csproj", "{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -495,6 +497,10 @@ Global
 		{4EECC912-2148-4E74-8429-54AC5F990128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EECC912-2148-4E74-8429-54AC5F990128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EECC912-2148-4E74-8429-54AC5F990128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
