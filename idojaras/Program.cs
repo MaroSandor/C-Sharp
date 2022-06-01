@@ -8,6 +8,10 @@ namespace idojaras
 {
     class Idojaras
     {
+        // Feladat leírása
+        // A feladat során a program kérje be a hónap nevét és napját a felhasználótól (pl. január/enter/10/enter).  Ez alapján írja ki a program a napi minimmum és maximum hőmérsékletet.
+        // A napi és havi átlagot, valamint, hogy melyik hónap volt a leghidegebb és legmelegebb az évben (napi átlaghőmérsékletek átlaga alapján).
+
         // Osztályváltozók
         private int napok,
             i;
@@ -123,6 +127,7 @@ namespace idojaras
 
         public void napiAtlag()
         {
+            int atlag;
             double napiatlag = 0;
             if (maxHok[i, napok - 1] >= 0 && minHok[i, napok - 1] >= 0)
             {
