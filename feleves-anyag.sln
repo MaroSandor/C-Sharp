@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mtable2", "mtable2\mtable2.csproj", "{307077C9-F9C8-4508-996D-EB798FE1DFE2}"
 EndProject
@@ -166,6 +166,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kepforog", "Kepforog\Kepforog.csproj", "{4EECC912-2148-4E74-8429-54AC5F990128}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalmazMuv", "halamzmuv\HalmazMuv.csproj", "{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeglaTDD", "TeglaTDD\TeglaTDD.csproj", "{190DDFD5-87CA-49B4-8F37-23B2FD2F7CE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeglaTDD_Ut", "TeglaTDD_Ut\TeglaTDD_Ut.csproj", "{22C7F419-6C7E-4C72-8470-BB5E544C009B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -501,6 +505,14 @@ Global
 		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A359C71-3EFB-4CD9-92F1-7B8D0E3E9FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190DDFD5-87CA-49B4-8F37-23B2FD2F7CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190DDFD5-87CA-49B4-8F37-23B2FD2F7CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190DDFD5-87CA-49B4-8F37-23B2FD2F7CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190DDFD5-87CA-49B4-8F37-23B2FD2F7CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C7F419-6C7E-4C72-8470-BB5E544C009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C7F419-6C7E-4C72-8470-BB5E544C009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C7F419-6C7E-4C72-8470-BB5E544C009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C7F419-6C7E-4C72-8470-BB5E544C009B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
