@@ -54,54 +54,66 @@ namespace halamzmuv
             // 
             this.listA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listA.FormattingEnabled = true;
-            this.listA.Location = new System.Drawing.Point(12, 53);
+            this.listA.ItemHeight = 16;
+            this.listA.Location = new System.Drawing.Point(16, 65);
+            this.listA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listA.Name = "listA";
-            this.listA.Size = new System.Drawing.Size(120, 264);
+            this.listA.Size = new System.Drawing.Size(159, 324);
             this.listA.TabIndex = 0;
             // 
             // listAB
             // 
             this.listAB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listAB.FormattingEnabled = true;
-            this.listAB.Location = new System.Drawing.Point(264, 53);
+            this.listAB.ItemHeight = 16;
+            this.listAB.Location = new System.Drawing.Point(352, 65);
+            this.listAB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listAB.Name = "listAB";
-            this.listAB.Size = new System.Drawing.Size(120, 264);
+            this.listAB.Size = new System.Drawing.Size(159, 324);
             this.listAB.TabIndex = 2;
             // 
             // listBA
             // 
             this.listBA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listBA.FormattingEnabled = true;
-            this.listBA.Location = new System.Drawing.Point(390, 53);
+            this.listBA.ItemHeight = 16;
+            this.listBA.Location = new System.Drawing.Point(520, 65);
+            this.listBA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBA.Name = "listBA";
-            this.listBA.Size = new System.Drawing.Size(120, 264);
+            this.listBA.Size = new System.Drawing.Size(159, 324);
             this.listBA.TabIndex = 3;
             // 
             // listMetszet
             // 
             this.listMetszet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listMetszet.FormattingEnabled = true;
-            this.listMetszet.Location = new System.Drawing.Point(516, 53);
+            this.listMetszet.ItemHeight = 16;
+            this.listMetszet.Location = new System.Drawing.Point(688, 65);
+            this.listMetszet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listMetszet.Name = "listMetszet";
-            this.listMetszet.Size = new System.Drawing.Size(120, 264);
+            this.listMetszet.Size = new System.Drawing.Size(159, 324);
             this.listMetszet.TabIndex = 4;
             // 
             // listUnio
             // 
             this.listUnio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listUnio.FormattingEnabled = true;
-            this.listUnio.Location = new System.Drawing.Point(642, 53);
+            this.listUnio.ItemHeight = 16;
+            this.listUnio.Location = new System.Drawing.Point(856, 65);
+            this.listUnio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listUnio.Name = "listUnio";
-            this.listUnio.Size = new System.Drawing.Size(120, 264);
+            this.listUnio.Size = new System.Drawing.Size(159, 324);
             this.listUnio.TabIndex = 5;
             // 
             // listB
             // 
             this.listB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listB.FormattingEnabled = true;
-            this.listB.Location = new System.Drawing.Point(138, 53);
+            this.listB.ItemHeight = 16;
+            this.listB.Location = new System.Drawing.Point(184, 65);
+            this.listB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listB.Name = "listB";
-            this.listB.Size = new System.Drawing.Size(120, 264);
+            this.listB.Size = new System.Drawing.Size(159, 324);
             this.listB.TabIndex = 6;
             // 
             // label1
@@ -109,9 +121,10 @@ namespace halamzmuv
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(9, 27);
+            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "A halmaz";
             // 
@@ -120,9 +133,10 @@ namespace halamzmuv
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(135, 27);
+            this.label2.Location = new System.Drawing.Point(180, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "B halmaz";
             // 
@@ -131,9 +145,10 @@ namespace halamzmuv
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(261, 27);
+            this.label3.Location = new System.Drawing.Point(348, 33);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.Size = new System.Drawing.Size(89, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "A\\B halmaz";
             // 
@@ -142,9 +157,10 @@ namespace halamzmuv
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(387, 27);
+            this.label4.Location = new System.Drawing.Point(516, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 10;
             this.label4.Text = "B\\A halmaz";
             // 
@@ -153,9 +169,10 @@ namespace halamzmuv
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(513, 27);
+            this.label5.Location = new System.Drawing.Point(684, 33);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "Metszet";
             // 
@@ -164,26 +181,29 @@ namespace halamzmuv
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(639, 27);
+            this.label6.Location = new System.Drawing.Point(852, 33);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.Size = new System.Drawing.Size(41, 17);
             this.label6.TabIndex = 12;
             this.label6.Text = "Unió";
             // 
             // halmazAInput
             // 
             this.halmazAInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.halmazAInput.Location = new System.Drawing.Point(12, 380);
+            this.halmazAInput.Location = new System.Drawing.Point(16, 468);
+            this.halmazAInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.halmazAInput.Name = "halmazAInput";
-            this.halmazAInput.Size = new System.Drawing.Size(120, 20);
+            this.halmazAInput.Size = new System.Drawing.Size(159, 22);
             this.halmazAInput.TabIndex = 13;
             // 
             // halmazBInput
             // 
             this.halmazBInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.halmazBInput.Location = new System.Drawing.Point(138, 380);
+            this.halmazBInput.Location = new System.Drawing.Point(184, 468);
+            this.halmazBInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.halmazBInput.Name = "halmazBInput";
-            this.halmazBInput.Size = new System.Drawing.Size(120, 20);
+            this.halmazBInput.Size = new System.Drawing.Size(159, 22);
             this.halmazBInput.TabIndex = 14;
             // 
             // label7
@@ -191,9 +211,10 @@ namespace halamzmuv
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(9, 364);
+            this.label7.Location = new System.Drawing.Point(12, 448);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.Size = new System.Drawing.Size(74, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "A halmaz";
             // 
@@ -202,18 +223,20 @@ namespace halamzmuv
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(135, 364);
+            this.label8.Location = new System.Drawing.Point(180, 448);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.Size = new System.Drawing.Size(74, 17);
             this.label8.TabIndex = 16;
             this.label8.Text = "B halmaz";
             // 
             // btnSzamitas
             // 
             this.btnSzamitas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSzamitas.Location = new System.Drawing.Point(264, 378);
+            this.btnSzamitas.Location = new System.Drawing.Point(352, 465);
+            this.btnSzamitas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSzamitas.Name = "btnSzamitas";
-            this.btnSzamitas.Size = new System.Drawing.Size(75, 23);
+            this.btnSzamitas.Size = new System.Drawing.Size(100, 28);
             this.btnSzamitas.TabIndex = 17;
             this.btnSzamitas.Text = "Elvégez!";
             this.btnSzamitas.UseVisualStyleBackColor = true;
@@ -222,9 +245,10 @@ namespace halamzmuv
             // hozzaad
             // 
             this.hozzaad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.hozzaad.Location = new System.Drawing.Point(264, 407);
+            this.hozzaad.Location = new System.Drawing.Point(352, 501);
+            this.hozzaad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hozzaad.Name = "hozzaad";
-            this.hozzaad.Size = new System.Drawing.Size(75, 23);
+            this.hozzaad.Size = new System.Drawing.Size(100, 28);
             this.hozzaad.TabIndex = 18;
             this.hozzaad.Text = "Hozzáad";
             this.hozzaad.UseVisualStyleBackColor = true;
@@ -233,9 +257,10 @@ namespace halamzmuv
             // torles
             // 
             this.torles.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.torles.Location = new System.Drawing.Point(183, 406);
+            this.torles.Location = new System.Drawing.Point(244, 500);
+            this.torles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.torles.Name = "torles";
-            this.torles.Size = new System.Drawing.Size(75, 23);
+            this.torles.Size = new System.Drawing.Size(100, 28);
             this.torles.TabIndex = 19;
             this.torles.Text = "Töröl";
             this.torles.UseVisualStyleBackColor = true;
@@ -243,9 +268,9 @@ namespace halamzmuv
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 440);
+            this.ClientSize = new System.Drawing.Size(1036, 542);
             this.Controls.Add(this.torles);
             this.Controls.Add(this.hozzaad);
             this.Controls.Add(this.btnSzamitas);
@@ -265,8 +290,10 @@ namespace halamzmuv
             this.Controls.Add(this.listBA);
             this.Controls.Add(this.listAB);
             this.Controls.Add(this.listA);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Halmazok és műveletek";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
