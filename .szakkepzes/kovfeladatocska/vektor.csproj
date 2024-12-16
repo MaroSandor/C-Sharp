@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>kovfeladatocska</RootNamespace>
     <AssemblyName>kovfeladatocska</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>8.0.110</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>

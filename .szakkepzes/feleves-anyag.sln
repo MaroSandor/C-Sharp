@@ -175,6 +175,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomersekletForm", "Homersek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gyakorlo_program", "gyakorlo_program\gyakorlo_program.csproj", "{4FBCE6A0-D728-4122-A4EB-8CEDB32F40A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutyaVasar", "KutyaVasar\KutyaVasar.csproj", "{5A5F36B0-D33A-4827-8864-DE2D3AE70B14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -525,6 +527,10 @@ Global
 		{4FBCE6A0-D728-4122-A4EB-8CEDB32F40A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBCE6A0-D728-4122-A4EB-8CEDB32F40A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBCE6A0-D728-4122-A4EB-8CEDB32F40A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5F36B0-D33A-4827-8864-DE2D3AE70B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5F36B0-D33A-4827-8864-DE2D3AE70B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5F36B0-D33A-4827-8864-DE2D3AE70B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5F36B0-D33A-4827-8864-DE2D3AE70B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
